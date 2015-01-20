@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!--[if IE 8]>    <html lang="es" class="ie8"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="es" class="no-ie"> <!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>Vete al Diablo - Panel Administador</title>
+
+	<link rel="stylesheet" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:500,400italic,100,300,700,300italic,400' rel='stylesheet' type='text/css'>
+    
+    <!--[if lt IE 9]>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<header>
+        <a class="nav-btn">
+            <div class="nav-btn-inner">
+                <span class="nav-btn-1"></span>
+                <span class="nav-btn-2"></span>
+                <span class="nav-btn-3"></span>
+            </div>
+        </a>
+		<div class="nav-logo">
+			<span class="img-centering"></span>
+			<img src="img/logo.png" alt="Crediadmin">
+		</div>
+		<div class="nav-user">
+			<a class="user-settings"><i class="icon_cog"></i></a>
+			<div class="user">
+				<p class="name">Cuenta administrador</p>
+				<p class="email">administrador@vetealdiablo.com.ar</p>
+			</div>
+
+			<ul id="user-settings-dropdown" class="user-settings-dropdown">
+                <!--<li><a href="#"><i class="icon_question_alt"></i>Ayuda</a></li>-->
+                <li><a href="vendedor.html"><i class="arrow_carrot-right_alt"></i>Ver ejemplo cuenta vendedor</a></li>
+            	<li><a href="index.html"><i class="icon_key"></i>Cerrar sesión</a></li>
+			</ul>
+		</div>
+	</header>
+
+    <div id="wrapper" class="wrapper">
+
+        <nav id="nav-side" class="nav-side scrollable">
+            <ul class="nav-side-items">
+                <li class="dropdown-container">
+                    <span class="dropdown-arrow arrow_carrot-down"></span>
+                    <a class="dropdown"><i class="icon_cart_alt"></i>Pedidos</a>
+                    <ul>
+                        <li><a href="admin.html">Pedidos activos</a></li>
+                        <li><a href="pedidos-entregados.html">Pedidos entregados</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-container">
+                    <span class="dropdown-arrow arrow_carrot-down"></span>
+                    <a class="dropdown"><i class="icon_grid-3x3"></i>Artículos</a>
+                    <ul>
+                        <li><a href="articulos-nuevo.html">Agregar nuevo</a></li>
+                        <li><a href="articulos-listado.html" class="active">Listado artículos</a></li>
+                    </ul>
+                </li>
+                <li><a href="estadisticas.html"><i class="icon_datareport"></i>Estadísticas</a></li>
+                <li><a href="usuarios.html"><i class="icon_group"></i>Autorizar usuarios</a></li>
+            </ul>
+            <ul class="nav-side-user">
+                <!-- <li><a href="#"><i class="icon_question_alt"></i>Ayuda</a></li> -->
+                <li><a href="index.html"><i class="icon_key"></i>Cerrar sesión</a></li>
+            </ul>
+        </nav>
+
+
+
+
+
+        <!-- MAIN CONTENT -->
+
+        <div class="main-container cf">
+            
+            <h2 class="main-title"><i class="icon_grid-3x3" style="top: 0px"></i>Listado de artículos</h2>
+
+            <div class="row cf">
+                <div class="col card-container span_12">
+
+                    <h3 class="subtitle">Temporada Verano 2015</h3>
+                    <div class="table-container table-rounded">
+                        <table class="table-default">
+                            <thead>
+                                <th>Nombre</th>
+                                <th>Num. artículo</th>
+                                <th>Precio franquicias</th>
+                                <th>Precio vendedores</th>
+                                <th class="table-actions">Acciones</th>
+                            </thead>
+                            <tbody class="article-list-items">
+                                <tr class="article-list-item">
+                                    <td><a href="administrar-articulo.html">Nombre del artículo</a></td>
+                                    <td>v1594042</td>
+                                    <td>$159,99</td>
+                                    <td>$179,99</td>
+                                    <td class="table-actions">
+                                        <a class="input-btn tooltip action-article-send" href="administrar-articulo.html" title="Editar artículo"><i class="icon_pencil-edit"></i></a>
+                                        <a class="input-btn error tooltip action-article-delete" href="#" title="Eliminar artículo" data-reveal-id="article-delete"><i class="icon_close"></i></a>
+                                    </td>
+                                </tr>
+                                <tr class="article-list-item">
+                                    <td><a href="administrar-articulo.html">Nombre del artículo</a></td>
+                                    <td>v1594042</td>
+                                    <td>$159,99</td>
+                                    <td>$179,99</td>
+                                    <td class="table-actions">
+                                        <a class="input-btn tooltip action-article-send" href="administrar-articulo.html" title="Editar artículo"><i class="icon_pencil-edit"></i></a>
+                                        <a class="input-btn error tooltip action-article-delete" href="#" title="Eliminar artículo" data-reveal-id="article-delete"><i class="icon_close"></i></a>
+                                    </td>
+                                </tr>
+                                <tr class="article-list-item">
+                                    <td><a href="administrar-articulo.html">Nombre del artículo</a></td>
+                                    <td>v1594042</td>
+                                    <td>$159,99</td>
+                                    <td>$179,99</td>
+                                    <td class="table-actions">
+                                        <a class="input-btn tooltip action-article-send" href="administrar-articulo.html" title="Editar artículo"><i class="icon_pencil-edit"></i></a>
+                                        <a class="input-btn error tooltip action-article-delete" href="#" title="Eliminar artículo" data-reveal-id="article-delete"><i class="icon_close"></i></a>
+                                    </td>
+                                </tr>
+                                <tr class="article-list-item">
+                                    <td><a href="administrar-articulo.html">Nombre del artículo</a></td>
+                                    <td>v1594042</td>
+                                    <td>$159,99</td>
+                                    <td>$179,99</td>
+                                    <td class="table-actions">
+                                        <a class="input-btn tooltip action-article-send" href="administrar-articulo.html" title="Editar artículo"><i class="icon_pencil-edit"></i></a>
+                                        <a class="input-btn error tooltip action-article-delete" href="#" title="Eliminar artículo" data-reveal-id="article-delete"><i class="icon_close"></i></a>
+                                    </td>
+                                </tr>
+                                <tr class="article-list-item">
+                                    <td><a href="administrar-articulo.html">Nombre del artículo</a></td>
+                                    <td>v1594042</td>
+                                    <td>$159,99</td>
+                                    <td>$179,99</td>
+                                    <td class="table-actions">
+                                        <a class="input-btn tooltip action-article-send" href="administrar-articulo.html" title="Editar artículo"><i class="icon_pencil-edit"></i></a>
+                                        <a class="input-btn error tooltip action-article-delete" href="#" title="Eliminar artículo" data-reveal-id="article-delete"><i class="icon_close"></i></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!--
+                            <div class="input-btn-group centered">
+                                <a href="order.html" class="input-btn">Administrar pedido</a>
+                                <a href="" class="input-btn error" data-reveal-id="order-delete">Remover</a>
+                            </div>
+                        -->
+                    </div>
+                </div>
+
+            </div> <!-- /.row -->
+
+        </div> <!-- /.main-container -->
+    </div> <!-- /.wrapper -->
+
+    <div id="article-delete" class="reveal-modal modal-warning">
+        <h3 class="subtitle">¿Estás seguro?</h3>
+        <p>Estás a punto de remover un artículo.<br>Esta acción no tiene vuelta atrás y solo debería realizarse cuando un pedido quede discontinuado.</p>
+        <div class="input-btn-group centered">
+            <a href="#" class="input-btn error">Si, remover el artículo</a>
+            <a href="#" class="input-btn">Cancelar</a>
+            
+        </div>
+        <a class="close-reveal-modal">&#215;</a>
+    </div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<!--[if IE 8]>    <html lang="es" class="ie8"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="es" class="no-ie"> <!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>Vete al Diablo</title>
+
+	<link rel="stylesheet" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:500,400italic,100,300,700,300italic,400' rel='stylesheet' type='text/css'>
+    
+    <!--[if lt IE 9]>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="loading-overlay hidden">
+        <div class="loading"></div>
+    </div>
+
+	<header>
+        <a class="nav-btn">
+            <div class="nav-btn-inner">
+                <span class="nav-btn-1"></span>
+                <span class="nav-btn-2"></span>
+                <span class="nav-btn-3"></span>
+            </div>
+        </a>
+		<div class="nav-logo">
+			<span class="img-centering"></span>
+			<img src="img/logo.png" alt="Crediadmin">
+		</div>
+		<div class="nav-user">
+			<a class="user-settings"><i class="icon_cog"></i></a>
+			<div class="user">
+				<p class="name">John Doe</p>
+				<p class="email">johnsalchichon@gmail.com</p>
+			</div>
+
+			<ul id="user-settings-dropdown" class="user-settings-dropdown">
+                <li><a href="#"><i class="icon_question_alt"></i>Ayuda</a></li>
+				<li><a href="#"><i class="icon_profile"></i>Mi perfil</a></li>
+            	<li><a href="#"><i class="icon_key"></i>Cerrar sesión</a></li>
+			</ul>
+		</div>
+	</header>
+
+    <div id="wrapper" class="wrapper">
+
+        <nav id="nav-side" class="nav-side scrollable">
+            <ul class="nav-side-items">
+                <li><a class="active" href="#"><i class="icon_house_alt"></i>Panel de inicio</a></li>
+                
+                <li class="dropdown-container">
+                    <span class="dropdown-arrow arrow_carrot-down"></span>
+                    <a href="#" class="dropdown"><i class="icon_briefcase"></i>Listado de cursos</a>
+                    <ul>
+                        <li><a href="#">Ver calendario</a></li>
+                        <li><a href="#">Ver tabla</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-container">
+                    <span class="dropdown-arrow arrow_carrot-down"></span>
+                    <a href="#" class="dropdown"><i class="icon_datareport"></i>Estadísticas</a>
+                    <ul>
+                        <li><a href="#">Generales</a></li>
+                        <li><a href="#">Por región</a></li>
+                        <li><a href="#">Por curso</a></li>
+                        <li><a href="#">Por filial</a></li>
+                        <li><a href="#">Por capacitador</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="icon_currency"></i>Informe de gastos</a></li>
+                <li><a href="#"><i class="icon_briefcase"></i>Oferta de cursos</a></li>
+                <li class="dropdown-container">
+                    <span class="dropdown-arrow arrow_carrot-down"></span>
+                    <a href="#" class="dropdown"><i class="icon_group"></i>Perfiles de usuario</a>
+                    <ul>
+                        <li><a href="#">Capacitadores</a></li>
+                        <li><a href="#">Filiales</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav-side-user">
+                <li><a href="#"><i class="icon_question_alt"></i>Ayuda</a></li>
+                <li><a href="#"><i class="icon_profile"></i>Mi perfil</a></li>
+                <li><a href="#"><i class="icon_key"></i>Cerrar sesión</a></li>
+            </ul>
+        </nav>
+
+        <div class="main-container cf">
+        
+            <div class="row">
+                <div class="col span_12">
+                    <h2 class="main-title"><i class="icon_house_alt"></i>Formularios ejemplo</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col card-container span_6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3><i class="icon_check"></i>Ejemplo</h3>
+                            <a class="card-close"><i class="icon_minus_alt2"></i></a>
+                        </div>
+                        <div class="card-content" id="notif-container">
+                            <div class="row form-row">
+                                <div class="col span_4">
+                                    <label class="input-label" for="input-1">Label ejemplo</label>
+                                    <input type="text" class="input-main" id="input-1" placeholder="Placeholda">
+                                </div>
+                                <div class="col span_4">
+                                    <label class="input-label" for="input-2">Label ejemplo</label>
+                                    <input type="text" class="input-main" id="input-2" placeholder="Placeholda">
+                                </div>
+                                <div class="col span_4">
+                                    <label class="input-label" for="input-1">Label ejemplo</label>
+                                    <select name="" id="" class="chosen input-main">
+                                        <option value="">Opcion 1</option>
+                                        <option value="">Opcion 2</option>
+                                        <option value="">Opcion 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row form-row">
+                                <div class="col span_8">
+                                    <label class="input-label" for="input-3">Label ejemplo</label>
+                                    <input type="text" class="input-main" id="input-3" placeholder="Placeholda">
+                                </div>
+                                <div class="col span_4">
+                                    <input type="submit" class="input-btn full label-margin" value="Botoncito">
+                                </div>
+                            </div>
+                            <div class="row form-row">
+                                <div class="col span_12">
+                                    <label class="input-label" for="input-3">Button group (no space)</label>
+                                    <div class="input-btn-group no-space">
+                                        <a href="" class="input-btn">Default</a>
+                                        <a href="" class="input-btn">Default</a>
+                                        <a href="" class="input-btn">Default</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row form-row">
+                                <div class="col span_12">
+                                    <label class="input-label" for="input-3">Button group (centrado)</label>
+                                    <div class="input-btn-group centered">
+                                        <a href="" class="input-btn">Default</a>
+                                        <a href="" class="input-btn error">Error</a>
+                                        <a href="" class="input-btn warning">Warning</a>
+                                        <a href="" class="input-btn success">SUCCESS!!!</a>
+                                        <a href="" class="input-btn disabled">Disabled</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row form-row">
+                                <div class="col span_12">
+                                    <label class="input-label" for="input-3">MODAL POPUP</label>
+                                    <div class="input-btn">
+                                        <a href="#" class="input-btn" data-reveal-id="modal-example">SHOW ME THE MONEY</a>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col card-container span_6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3><i class="icon_check"></i>Ejemplo</h3>
+                            <a class="card-close"><i class="icon_minus_alt2"></i></a>
+                        </div>
+                        <div class="card-content">
+                            <div class="row form-row">
+                                <div class="col span_6">
+                                    <label class="input-label" for="input-4">Seleccion múltiple</label>
+                                    <select name="" id="input-4" class="chosen input-main" multiple>
+                                        <option value="">Opción 1</option>
+                                        <option value="">Opción 2</option>
+                                        <option value="">Opción 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row form-row">
+                                <div class="col span_3">
+                                    <label class="input-label" for="">Radio buttons</label>
+                                    <label class="input-radio" for="input-5-1">
+                                        <input type="radio" name="radio-example" value="" id="input-5-1">
+                                        Opc 1
+                                    </label>
+                                    <label class="input-radio" for="input-5-2">
+                                        <input type="radio" name="radio-example" value="" id="input-5-2">
+                                        Opc 2
+                                    </label>
+                                    <label class="input-radio" for="input-5-3">
+                                        <input type="radio" name="radio-example" value="" id="input-5-3">
+                                        Opc 3
+                                    </label>
+                                </div>
+                                <div class="col span_3">
+                                    <label class="input-label" for="">Checkboxes</label>
+                                    <label class="input-radio" for="input-6-1">
+                                        <input type="checkbox" name="radio-example" value="" id="input-6-1">
+                                        Opc 1
+                                    </label>
+                                    <label class="input-radio" for="input-6-2">
+                                        <input type="checkbox" name="radio-example" value="" id="input-6-2">
+                                        Opc 2
+                                    </label>
+                                    <label class="input-radio" for="input-6-3">
+                                        <input type="checkbox" name="radio-example" value="" id="input-6-3">
+                                        Opc 3
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row form-row">
+                                <div class="col span_6">
+                                    <label class="input-label" for="input-4">Datepicker</label>
+                                    <input type="text" class="input-main datepicker" placeholder="Click me">
+                                </div>
+                            </div>
+                            <div class="row form-row">
+                                <div class="col span_6">
+                                    <div class="table-container">
+                                        <table class="table-default">
+                                            <thead>
+                                                <tr>
+                                                    <th>Header 1</th>
+                                                    <th>Header 2</th>
+                                                    <th>Header 3</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Info 1</td>
+                                                    <td>Info 2</td>
+                                                    <td>Info 3</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Info 1</td>
+                                                    <td>Info 2</td>
+                                                    <td>Info 3</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Info 1</td>
+                                                    <td>Info 2</td>
+                                                    <td>Info 3</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Info 1</td>
+                                                    <td>Info 2</td>
+                                                    <td>Info 3</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Info 1</td>
+                                                    <td>Info 2</td>
+                                                    <td>Info 3</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Info 1</td>
+                                                    <td>Info 2</td>
+                                                    <td>Info 3</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col card-container span_12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3><i class="icon_calendar"></i>Calendario</h3>
+                        <a class="card-close"><i class="icon_minus_alt2"></i></a>
+                    </div>
+                    <div class="card-content">
+                        <div class="row">
+                            <div class="col span_12">
+                                <div id="fullcalendar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div> <!-- /.main-container -->
+
+    <div id="modal-example" class="reveal-modal">
+        <h1>Modal Title</h1>
+        <p>Any content could go in here.</p>
+        <a class="close-reveal-modal">&#215;</a>
+    </div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
+    <script src="js/fullcalendar.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

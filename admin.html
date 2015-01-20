@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<!--[if IE 8]>    <html lang="es" class="ie8"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="es" class="no-ie"> <!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>Vete al Diablo - Panel Administador</title>
+
+	<link rel="stylesheet" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:500,400italic,100,300,700,300italic,400' rel='stylesheet' type='text/css'>
+    
+    <!--[if lt IE 9]>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<header>
+        <a class="nav-btn">
+            <div class="nav-btn-inner">
+                <span class="nav-btn-1"></span>
+                <span class="nav-btn-2"></span>
+                <span class="nav-btn-3"></span>
+            </div>
+        </a>
+		<div class="nav-logo">
+			<span class="img-centering"></span>
+			<img src="img/logo.png" alt="Crediadmin">
+		</div>
+		<div class="nav-user">
+			<a class="user-settings"><i class="icon_cog"></i></a>
+			<div class="user">
+				<p class="name">Cuenta administrador</p>
+				<p class="email">administrador@vetealdiablo.com.ar</p>
+			</div>
+
+			<ul id="user-settings-dropdown" class="user-settings-dropdown">
+                <!--<li><a href="#"><i class="icon_question_alt"></i>Ayuda</a></li>-->
+                <li><a href="vendedor.html"><i class="arrow_carrot-right_alt"></i>Ver ejemplo cuenta vendedor</a></li>
+            	<li><a href="index.html"><i class="icon_key"></i>Cerrar sesión</a></li>
+			</ul>
+		</div>
+	</header>
+
+    <div id="wrapper" class="wrapper">
+
+        <nav id="nav-side" class="nav-side scrollable">
+            <ul class="nav-side-items">
+                <li class="dropdown-container">
+                    <span class="dropdown-arrow arrow_carrot-down"></span>
+                    <a class="dropdown"><i class="icon_cart_alt"></i>Pedidos</a>
+                    <ul>
+                        <li><a href="admin.html" class="active">Pedidos activos</a></li>
+                        <li><a href="pedidos-entregados.html">Pedidos entregados</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-container">
+                    <span class="dropdown-arrow arrow_carrot-down"></span>
+                    <a class="dropdown"><i class="icon_grid-3x3"></i>Artículos</a>
+                    <ul>
+                        <li><a href="articulos-nuevo.html">Agregar nuevo</a></li>
+                        <li><a href="articulos-listado.html">Listado artículos</a></li>
+                    </ul>
+                </li>
+                <li><a href="estadisticas.html"><i class="icon_datareport"></i>Estadísticas</a></li>
+                <li><a href="usuarios.html"><i class="icon_group"></i>Autorizar usuarios</a></li>
+            </ul>
+            <ul class="nav-side-user">
+                <!-- <li><a href="#"><i class="icon_question_alt"></i>Ayuda</a></li> -->
+                <li><a href="index.html"><i class="icon_key"></i>Cerrar sesión</a></li>
+            </ul>
+        </nav>
+
+
+
+
+
+        <!-- MAIN CONTENT -->
+
+        <div class="main-container cf">
+            
+            <h2 class="main-title"><i class="icon_cart_alt"></i>Pedidos activos</h2>
+
+            <div class="row cf">
+                <div class="col card-container span_6">
+
+                    <h3 class="subtitle">Pendientes <span class="info-tag green">4</span></h3>
+
+                    <div class="card order order-pending">
+                        <div class="card-header">
+                            <h3><i class="icon_cart"></i>Pedido #2039</h3>
+                            <a class="card-close"><i class="icon_minus_alt2"></i></a>
+                        </div>
+                        <div class="card-content">
+                            <div class="order-data">
+                                <ul>
+                                    <li>
+                                        <p><i class="icon_calendar"></i><strong>Fecha:</strong> 23/01/15</p>
+                                    </li>
+                                    <li>
+                                        <p><i class="icon_house_alt"></i><strong>Comprador:</strong> Sucursal Belgrano</p>
+                                        <address>
+                                            Av. Cabildo 2054<br>
+                                            Belgrano, CABA
+                                        </address>
+                                    </li>
+                                    <li>
+                                        <p><i class="icon_tags_alt"></i><strong>Importe:</strong> $7284,50</p>
+                                    </li>
+                                    <li>
+                                        <div class="input-btn-group centered">
+                                            <a href="administrar-pedido.html" class="input-btn">Administrar pedido</a>
+                                            <a href="" class="input-btn error" data-reveal-id="order-delete">Remover</a>
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div> <!-- /.order -->
+
+                    <div class="card order order-pending">
+                        <div class="card-header">
+                            <h3><i class="icon_cart"></i>Pedido #2039</h3>
+                            <a class="card-close"><i class="icon_minus_alt2"></i></a>
+                        </div>
+                        <div class="card-content">
+                            <div class="order-data">
+                                <ul>
+                                    <li>
+                                        <p><i class="icon_calendar"></i><strong>Fecha:</strong> 23/01/15</p>
+                                    </li>
+                                    <li>
+                                        <p><i class="icon_house_alt"></i><strong>Comprador:</strong> Sucursal Belgrano</p>
+                                        <address>
+                                            Av. Cabildo 2054<br>
+                                            Belgrano, CABA
+                                        </address>
+                                    </li>
+                                    <li>
+                                        <p><i class="icon_tags_alt"></i><strong>Importe:</strong> $7284,50</p>
+                                    </li>
+                                    <li>
+                                        <div class="input-btn-group centered">
+                                            <a href="administrar-pedido.html" class="input-btn">Administrar pedido</a>
+                                            <a href="" class="input-btn error" data-reveal-id="order-delete">Remover</a>
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div> <!-- /.order -->
+
+                    <div class="card order order-pending">
+                        <div class="card-header">
+                            <h3><i class="icon_cart"></i>Pedido #2039</h3>
+                            <a class="card-close"><i class="icon_minus_alt2"></i></a>
+                        </div>
+                        <div class="card-content">
+                            <div class="order-data">
+                                <ul>
+                                    <li>
+                                        <p><i class="icon_calendar"></i><strong>Fecha:</strong> 23/01/15</p>
+                                    </li>
+                                    <li>
+                                        <p><i class="icon_house_alt"></i><strong>Comprador:</strong> Sucursal Belgrano</p>
+                                        <address>
+                                            Av. Cabildo 2054<br>
+                                            Belgrano, CABA
+                                        </address>
+                                    </li>
+                                    <li>
+                                        <p><i class="icon_tags_alt"></i><strong>Importe:</strong> $7284,50</p>
+                                    </li>
+                                    <li>
+                                        <div class="input-btn-group centered">
+                                            <a href="administrar-pedido.html" class="input-btn">Administrar pedido</a>
+                                            <a href="" class="input-btn error" data-reveal-id="order-delete">Remover</a>
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div> <!-- /.order -->
+
+                    <div class="card order order-pending">
+                        <div class="card-header">
+                            <h3><i class="icon_cart"></i>Pedido #2039</h3>
+                            <a class="card-close"><i class="icon_minus_alt2"></i></a>
+                        </div>
+                        <div class="card-content">
+                            <div class="order-data">
+                                <ul>
+                                    <li>
+                                        <p><i class="icon_calendar"></i><strong>Fecha:</strong> 23/01/15</p>
+                                    </li>
+                                    <li>
+                                        <p><i class="icon_house_alt"></i><strong>Comprador:</strong> Sucursal Belgrano</p>
+                                        <address>
+                                            Av. Cabildo 2054<br>
+                                            Belgrano, CABA
+                                        </address>
+                                    </li>
+                                    <li>
+                                        <p><i class="icon_tags_alt"></i><strong>Importe:</strong> $7284,50</p>
+                                    </li>
+                                    <li>
+                                        <div class="input-btn-group centered">
+                                            <a href="administrar-pedido.html" class="input-btn">Administrar pedido</a>
+                                            <a href="" class="input-btn error" data-reveal-id="order-delete">Remover</a>
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div> <!-- /.order -->
+
+
+                </div>
+
+                <div class="col card-container span_6">
+
+                    <h3 class="subtitle">En proceso <span class="info-tag yellow">3</span></h3>
+
+                    <div class="card order order-inprogress">
+                        <div class="card-header">
+                            <h3><i class="icon_cart"></i>Pedido #2039</h3>
+                            <a class="card-close"><i class="icon_minus_alt2"></i></a>
+                        </div>
+                        <div class="card-content">
+                            <div class="order-data">
+                                <ul>
+                                    <li>
+                                        <p><i class="icon_calendar"></i><strong>Fecha:</strong> 23/01/15</p>
+                                    </li>
+                                    <li>
+                                        <p><i class="icon_house_alt"></i><strong>Comprador:</strong> Sucursal Belgrano</p>
+                                        <address>
+                                            Av. Cabildo 2054<br>
+                                            Belgrano, CABA
+                                        </address>
+                                    </li>
+                                    <li>
+                                        <p><i class="icon_tags_alt"></i><strong>Importe:</strong> $7284,50</p>
+                                    </li>
+                                    <li>
+                                        <div class="input-btn-group centered">
+                                            <a href="administrar-pedido.html" class="input-btn">Administrar pedido</a>
+                                            <a href="" class="input-btn error" data-reveal-id="order-delete">Remover</a>
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div> <!-- /.order -->
+
+                    <div class="card order order-inprogress">
+                        <div class="card-header">
+                            <h3><i class="icon_cart"></i>Pedido #2039</h3>
+                            <a class="card-close"><i class="icon_minus_alt2"></i></a>
+                        </div>
+                        <div class="card-content">
+                            <div class="order-data">
+                                <ul>
+                                    <li>
+                                        <p><i class="icon_calendar"></i><strong>Fecha:</strong> 23/01/15</p>
+                                    </li>
+                                    <li>
+                                        <p><i class="icon_house_alt"></i><strong>Comprador:</strong> Sucursal Belgrano</p>
+                                        <address>
+                                            Av. Cabildo 2054<br>
+                                            Belgrano, CABA
+                                        </address>
+                                    </li>
+                                    <li>
+                                        <p><i class="icon_tags_alt"></i><strong>Importe:</strong> $7284,50</p>
+                                    </li>
+                                    <li>
+                                        <div class="input-btn-group centered">
+                                            <a href="administrar-pedido.html" class="input-btn">Administrar pedido</a>
+                                            <a href="" class="input-btn error" data-reveal-id="order-delete">Remover</a>
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div> <!-- /.order -->
+
+                    <div class="card order order-inprogress">
+                        <div class="card-header">
+                            <h3><i class="icon_cart"></i>Pedido #2039</h3>
+                            <a class="card-close"><i class="icon_minus_alt2"></i></a>
+                        </div>
+                        <div class="card-content">
+                            <div class="order-data">
+                                <ul>
+                                    <li>
+                                        <p><i class="icon_calendar"></i><strong>Fecha:</strong> 23/01/15</p>
+                                    </li>
+                                    <li>
+                                        <p><i class="icon_house_alt"></i><strong>Comprador:</strong> Sucursal Belgrano</p>
+                                        <address>
+                                            Av. Cabildo 2054<br>
+                                            Belgrano, CABA
+                                        </address>
+                                    </li>
+                                    <li>
+                                        <p><i class="icon_tags_alt"></i><strong>Importe:</strong> $7284,50</p>
+                                    </li>
+                                    <li>
+                                        <div class="input-btn-group centered">
+                                            <a href="administrar-pedido.html" class="input-btn">Administrar pedido</a>
+                                            <a href="" class="input-btn error" data-reveal-id="order-delete">Remover</a>
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div> <!-- /.order -->
+                    
+                </div>
+
+            </div> <!-- /.row -->
+
+        </div> <!-- /.main-container -->
+    </div> <!-- /.wrapper -->
+
+    <div id="order-delete" class="reveal-modal modal-warning">
+        <h3 class="subtitle">¿Estás seguro?</h3>
+        <p>Estás a punto de remover un pedido.<br>Esta acción no tiene vuelta atrás.</p>
+        <div class="input-btn-group centered">
+            <a href="#" class="input-btn error">Si, remover el pedido</a>
+            <a href="#" class="input-btn">Cancelar</a>
+            
+        </div>
+        <a class="close-reveal-modal">&#215;</a>
+    </div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+</html>

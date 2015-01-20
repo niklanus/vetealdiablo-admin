@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<!--[if IE 8]>    <html lang="es" class="ie8"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="es" class="no-ie"> <!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>Vete al Diablo - Panel Administador</title>
+
+	<link rel="stylesheet" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:500,400italic,100,300,700,300italic,400' rel='stylesheet' type='text/css'>
+    
+    <!--[if lt IE 9]>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<header>
+        <a class="nav-btn">
+            <div class="nav-btn-inner">
+                <span class="nav-btn-1"></span>
+                <span class="nav-btn-2"></span>
+                <span class="nav-btn-3"></span>
+            </div>
+        </a>
+		<div class="nav-logo">
+			<span class="img-centering"></span>
+			<img src="img/logo.png" alt="Crediadmin">
+		</div>
+		<div class="nav-user">
+			<a class="user-settings"><i class="icon_cog"></i></a>
+			<div class="user">
+				<p class="name">Cuenta administrador</p>
+				<p class="email">administrador@vetealdiablo.com.ar</p>
+			</div>
+
+			<ul id="user-settings-dropdown" class="user-settings-dropdown">
+                <!--<li><a href="#"><i class="icon_question_alt"></i>Ayuda</a></li>-->
+                <li><a href="vendedor.html"><i class="arrow_carrot-right_alt"></i>Ver ejemplo cuenta vendedor</a></li>
+            	<li><a href="index.html"><i class="icon_key"></i>Cerrar sesión</a></li>
+			</ul>
+		</div>
+	</header>
+
+    <div id="wrapper" class="wrapper">
+
+        <nav id="nav-side" class="nav-side scrollable">
+            <ul class="nav-side-items">
+                <li class="dropdown-container">
+                    <span class="dropdown-arrow arrow_carrot-down"></span>
+                    <a class="active dropdown"><i class="icon_cart_alt"></i>Pedidos</a>
+                    <ul>
+                        <li><a href="admin.html">Pedidos activos</a></li>
+                        <li><a href="pedidos-entregados.html">Pedidos entregados</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-container">
+                    <span class="dropdown-arrow arrow_carrot-down"></span>
+                    <a class="dropdown"><i class="icon_grid-3x3"></i>Artículos</a>
+                    <ul>
+                        <li><a href="articulos-nuevo.html">Agregar nuevo</a></li>
+                        <li><a href="articulos-listado.html">Listado artículos</a></li>
+                    </ul>
+                </li>
+                <li><a href="estadisticas.html"><i class="icon_datareport"></i>Estadísticas</a></li>
+                <li><a href="usuarios.html"><i class="icon_group"></i>Autorizar usuarios</a></li>
+            </ul>
+            <ul class="nav-side-user">
+                <!-- <li><a href="#"><i class="icon_question_alt"></i>Ayuda</a></li> -->
+                <li><a href="index.html"><i class="icon_key"></i>Cerrar sesión</a></li>
+            </ul>
+        </nav>
+
+
+
+
+
+        <!-- MAIN CONTENT -->
+
+        <div class="main-container cf">
+            
+            <h2 class="main-title"><i class="icon_cart_alt"></i>Pedido #2039 <span class="info-tag yellow" href="admin.html">En proceso</span></h2>
+
+            <div class="row cf">
+                <div class="col card-container span_12">
+                    <div class="card no-header">
+                        <div class="card-content">
+                            <div class="order-data">
+                                <div class="row cf">
+                                    <div class="col span_4">
+                                        <p><i class="icon_calendar"></i><strong>Fecha:</strong> 23/01/15</p>
+                                    </div>
+                                    <div class="col span_4">
+                                        <p><i class="icon_house_alt"></i><strong>Comprador:</strong> Sucursal Belgrano</p>
+                                        <address>
+                                            Av. Cabildo 2054<br>
+                                            Belgrano, CABA
+                                        </address>
+                                    </div>
+                                    <div class="col span_4">
+                                        <p><i class="icon_tags_alt"></i><strong>Importe:</strong> $7284,50</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- /.order -->
+                </div>
+            </div>
+
+            <div class="row cf">
+                <div class="col card-container span_6">
+
+                    <h3 class="subtitle">Artículos pendientes de envío</h3>
+                    
+                    <div class="table-rounded">
+                        <table class="table-default">
+                            <thead>
+                                <th class="article-list-row1">Artículo</th>
+                                <th class="article-list-row2">Cantidad</th>
+                                <th class="article-list-row3">Acciones</th>
+                            </thead>
+                            <tbody class="article-list-items">
+                                <tr class="article-list-item" id="article-list-item-dummy1-1">
+                                    <td class="article-list-row1"><a href="administrar-articulo.html">Nombre del artículo</a></td>
+                                    <td class="article-list-row2">10</td>
+                                    <td class="article-list-row3 table-actions">
+                                        <a class="input-btn success tooltip action-article-send" href="#" title="Marcar como enviado"><i class="icon_box-checked"></i></a>
+                                        <a class="input-btn error tooltip action-article-delete" href="#" title="Eliminar del pedido" data-reveal-id="article-delete"><i class="icon_close"></i></a>
+                                    </td>
+                                </tr>
+                                <tr class="article-list-item" id="article-list-item-dummy1-2">
+                                    <td class="article-list-row1"><a href="administrar-articulo.html">Nombre del artículo</a></td>
+                                    <td class="article-list-row2">10</td>
+                                    <td class="article-list-row3 table-actions">
+                                        <a class="input-btn success tooltip action-article-send" href="#" title="Marcar como enviado"><i class="icon_box-checked"></i></a>
+                                        <a class="input-btn error tooltip action-article-delete" href="#" title="Eliminar del pedido" data-reveal-id="article-delete"><i class="icon_close"></i></a>
+                                    </td>
+                                </tr>
+                                <tr class="article-list-item" id="article-list-item-dummy1-3">
+                                    <td class="article-list-row1"><a href="administrar-articulo.html">Nombre del artículo</a></td>
+                                    <td class="article-list-row2">10</td>
+                                    <td class="article-list-row3 table-actions">
+                                        <a class="input-btn success tooltip action-article-send" href="#" title="Marcar como enviado"><i class="icon_box-checked"></i></a>
+                                        <a class="input-btn error tooltip action-article-delete" href="#" title="Eliminar del pedido" data-reveal-id="article-delete"><i class="icon_close"></i></a>
+                                    </td>
+                                </tr>
+                                <tr class="article-list-item" id="article-list-item-dummy1-4">
+                                    <td class="article-list-row1"><a href="administrar-articulo.html">Nombre del artículo</a></td>
+                                    <td class="article-list-row2">10</td>
+                                    <td class="article-list-row3 table-actions">
+                                        <a class="input-btn success tooltip action-article-send" href="#" title="Marcar como enviado"><i class="icon_box-checked"></i></a>
+                                        <a class="input-btn error tooltip action-article-delete" href="#" title="Eliminar del pedido" data-reveal-id="article-delete"><i class="icon_close"></i></a>
+                                    </td>
+                                </tr>
+                                <tr class="article-list-item" id="article-list-item-dummy1-5">
+                                    <td class="article-list-row1"><a href="administrar-articulo.html">Nombre del artículo</a></td>
+                                    <td class="article-list-row2">10</td>
+                                    <td class="article-list-row3 table-actions">
+                                        <a class="input-btn success tooltip action-article-send" href="#" title="Marcar como enviado"><i class="icon_box-checked"></i></a>
+                                        <a class="input-btn error tooltip action-article-delete" href="#" title="Eliminar del pedido" data-reveal-id="article-delete"><i class="icon_close"></i></a>
+                                    </td>
+                                </tr>
+                                <tr class="article-list-item" id="article-list-item-dummy1-6">
+                                    <td class="article-list-row1"><a href="administrar-articulo.html">Nombre del artículo</a></td>
+                                    <td class="article-list-row2">10</td>
+                                    <td class="article-list-row3 table-actions">
+                                        <a class="input-btn success tooltip action-article-send" href="#" title="Marcar como enviado"><i class="icon_box-checked"></i></a>
+                                        <a class="input-btn error tooltip action-article-delete" href="#" title="Eliminar del pedido" data-reveal-id="article-delete"><i class="icon_close"></i></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                        <!--
+                            <div class="input-btn-group centered">
+                                <a href="order.html" class="input-btn">Administrar pedido</a>
+                                <a href="" class="input-btn error" data-reveal-id="order-delete">Remover</a>
+                            </div>
+                        -->
+                    </div>
+
+                </div>
+
+                <div class="col card-container span_6">
+
+                    <h3 class="subtitle">Artículos enviados</h3>
+                    
+                    <div class="table-rounded">
+                        <table class="table-default">
+                            <thead>
+                                <th class="article-list-row1">Artículo</th>
+                                <th class="article-list-row2">Cantidad</th>
+                            </thead>
+                            <tbody class="article-list-items">
+                                <tr class="article-list-item" id="article-list-item-dummy2-1">
+                                    <td class="article-list-row1"><a href="administrar-articulo.html">Nombre del artículo</a></td>
+                                    <td class="article-list-row2">10</td>
+                                    </td>
+                                </tr>
+                                <tr class="article-list-item" id="article-list-item-dummy2-2">
+                                    <td class="article-list-row1"><a href="administrar-articulo.html">Nombre del artículo</a></td>
+                                    <td class="article-list-row2">10</td>
+                                    </td>
+                                </tr>
+                                <tr class="article-list-item" id="article-list-item-dummy2-3">
+                                    <td class="article-list-row1"><a href="administrar-articulo.html">Nombre del artículo</a></td>
+                                    <td class="article-list-row2">10</td>
+                                </tr>
+                                <tr class="article-list-item" id="article-list-item-dummy2-4">
+                                    <td class="article-list-row1"><a href="administrar-articulo.html">Nombre del artículo</a></td>
+                                    <td class="article-list-row2">10</td>
+                                </tr>
+                                <tr class="article-list-item" id="article-list-item-dummy2-5">
+                                    <td class="article-list-row1"><a href="administrar-articulo.html">Nombre del artículo</a></td>
+                                    <td class="article-list-row2">10</td>
+                                </tr>
+                                <tr class="article-list-item" id="article-list-item-dummy2-6">
+                                    <td class="article-list-row1"><a href="administrar-articulo.html">Nombre del artículo</a></td>
+                                    <td class="article-list-row2">10</td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+
+                    </div>
+                </div>
+
+            </div> <!-- /.row -->
+
+
+            <div class="input-btn-group centered margin-top">
+                <a href="" class="input-btn error" data-reveal-id="order-delete">Remover pedido</a>
+            </div>
+
+        </div> <!-- /.main-container -->
+    </div> <!-- /.wrapper -->
+
+    <div id="order-delete" class="reveal-modal modal-warning">
+        <h3 class="subtitle">¿Estás seguro?</h3>
+        <p>Estás a punto de remover un pedido.<br>Esta acción no tiene vuelta atrás.</p>
+        <div class="input-btn-group centered">
+            <a href="#" class="input-btn error">Si, remover el pedido</a>
+            <a href="#" class="input-btn">Cancelar</a>
+            
+        </div>
+        <a class="close-reveal-modal">&#215;</a>
+    </div>
+
+    <div id="article-delete" class="reveal-modal modal-warning">
+        <h3 class="subtitle">¿Estás seguro?</h3>
+        <p>Estás a punto de remover un artículo de un pedido.<br>Esta acción no tiene vuelta atrás y solo debería realizarse si el artículo no podrá enviarse.</p>
+        <div class="input-btn-group centered">
+            <a href="#" class="input-btn error">Si, remover el artículo</a>
+            <a href="#" class="input-btn">Cancelar</a>
+            
+        </div>
+        <a class="close-reveal-modal">&#215;</a>
+    </div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/scripts.js"></script>
+
+    <script>
+        /* DUMMY STUFF */
+
+
+        $('.action-article-send').click(function() {
+            $(this).parents('.article-list-item').fadeOut(400);
+        });
+
+        $('#article-list-item-dummy1-1 .action-article-send').click(function() {
+            $('#article-list-item-dummy2-1').show(400);
+        });
+        $('#article-list-item-dummy1-2 .action-article-send').click(function() {
+            $('#article-list-item-dummy2-2').show(400);
+        });
+        $('#article-list-item-dummy1-3 .action-article-send').click(function() {
+            $('#article-list-item-dummy2-3').show(400);
+        });
+        $('#article-list-item-dummy1-4 .action-article-send').click(function() {
+            $('#article-list-item-dummy2-4').show(400);
+        });
+        $('#article-list-item-dummy1-5 .action-article-send').click(function() {
+            $('#article-list-item-dummy2-5').show(400);
+        });
+        $('#article-list-item-dummy1-6 .action-article-send').click(function() {
+            $('#article-list-item-dummy2-6').show(400);
+        });
+    </script>
+</body>
+</html>

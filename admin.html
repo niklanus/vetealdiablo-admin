@@ -111,7 +111,7 @@
                                     <li>
                                         <div class="input-btn-group centered">
                                             <a href="administrar-pedido.html" class="input-btn">Administrar pedido</a>
-                                            <a href="" class="input-btn error" data-reveal-id="order-delete">Remover</a>
+                                            <a href="" class="input-btn error" data-toggle="modal" data-target="#order-delete">Remover</a>
                                         </div>
                                     </li>
                                     
@@ -144,7 +144,7 @@
                                     <li>
                                         <div class="input-btn-group centered">
                                             <a href="administrar-pedido.html" class="input-btn">Administrar pedido</a>
-                                            <a href="" class="input-btn error" data-reveal-id="order-delete">Remover</a>
+                                            <a href="" class="input-btn error" data-toggle="modal" data-target="#order-delete">Remover</a>
                                         </div>
                                     </li>
                                     
@@ -177,7 +177,7 @@
                                     <li>
                                         <div class="input-btn-group centered">
                                             <a href="administrar-pedido.html" class="input-btn">Administrar pedido</a>
-                                            <a href="" class="input-btn error" data-reveal-id="order-delete">Remover</a>
+                                            <a href="" class="input-btn error" data-toggle="modal" data-target="#order-delete">Remover</a>
                                         </div>
                                     </li>
                                     
@@ -210,7 +210,7 @@
                                     <li>
                                         <div class="input-btn-group centered">
                                             <a href="administrar-pedido.html" class="input-btn">Administrar pedido</a>
-                                            <a href="" class="input-btn error" data-reveal-id="order-delete">Remover</a>
+                                            <a href="" class="input-btn error" data-toggle="modal" data-target="#order-delete">Remover</a>
                                         </div>
                                     </li>
                                     
@@ -250,7 +250,7 @@
                                     <li>
                                         <div class="input-btn-group centered">
                                             <a href="administrar-pedido.html" class="input-btn">Administrar pedido</a>
-                                            <a href="" class="input-btn error" data-reveal-id="order-delete">Remover</a>
+                                            <a href="" class="input-btn error" data-toggle="modal" data-target="#order-delete">Remover</a>
                                         </div>
                                     </li>
                                     
@@ -283,7 +283,7 @@
                                     <li>
                                         <div class="input-btn-group centered">
                                             <a href="administrar-pedido.html" class="input-btn">Administrar pedido</a>
-                                            <a href="" class="input-btn error" data-reveal-id="order-delete">Remover</a>
+                                            <a href="" class="input-btn error" data-toggle="modal" data-target="#order-delete">Remover</a>
                                         </div>
                                     </li>
                                     
@@ -316,7 +316,7 @@
                                     <li>
                                         <div class="input-btn-group centered">
                                             <a href="administrar-pedido.html" class="input-btn">Administrar pedido</a>
-                                            <a href="" class="input-btn error" data-reveal-id="order-delete">Remover</a>
+                                            <a href="" class="input-btn error" data-toggle="modal" data-target="#order-delete">Remover</a>
                                         </div>
                                     </li>
                                     
@@ -332,15 +332,22 @@
         </div> <!-- /.main-container -->
     </div> <!-- /.wrapper -->
 
-    <div id="order-delete" class="reveal-modal modal-warning">
-        <h3 class="subtitle">¿Estás seguro?</h3>
-        <p>Estás a punto de remover un pedido.<br>Esta acción no tiene vuelta atrás.</p>
-        <div class="input-btn-group centered">
-            <a href="#" class="input-btn error">Si, remover el pedido</a>
-            <a href="#" class="input-btn">Cancelar</a>
-            
+    <div class="modal fade" id="order-delete" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <a class="close" data-dismiss="modal">&times;</a>
+            <h3 class="subtitle">¿Estás seguro?</h4>
+          </div>
+          <div class="modal-body">
+            <p>Estás a punto de remover un pedido.<br>Esta acción no tiene vuelta atrás.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="input-btn error" data-dismiss="modal">Si, remover el pedido</button>
+            <button type="button" class="input-btn" data-dismiss="modal">Cancelar</button>
+          </div>
         </div>
-        <a class="close-reveal-modal">&#215;</a>
+      </div>
     </div>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

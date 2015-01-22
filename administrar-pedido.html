@@ -126,7 +126,7 @@
                                     <td class="article-list-row2">10</td>
                                     <td class="article-list-row3 table-actions">
                                         <a class="input-btn success tooltip action-article-send" href="#" title="Marcar como enviado"><i class="icon_box-checked"></i></a>
-                                        <a class="input-btn error tooltip action-article-delete" href="#" title="Eliminar del pedido" data-reveal-id="article-delete"><i class="icon_close"></i></a>
+                                        <a class="input-btn error tooltip action-article-delete" href="#" title="Eliminar del pedido" data-toggle="modal" data-target="#article-delete"><i class="icon_close"></i></a>
                                     </td>
                                 </tr>
                                 <tr class="article-list-item" id="article-list-item-dummy1-2">
@@ -134,7 +134,7 @@
                                     <td class="article-list-row2">10</td>
                                     <td class="article-list-row3 table-actions">
                                         <a class="input-btn success tooltip action-article-send" href="#" title="Marcar como enviado"><i class="icon_box-checked"></i></a>
-                                        <a class="input-btn error tooltip action-article-delete" href="#" title="Eliminar del pedido" data-reveal-id="article-delete"><i class="icon_close"></i></a>
+                                        <a class="input-btn error tooltip action-article-delete" href="#" title="Eliminar del pedido" data-toggle="modal" data-target="#article-delete"><i class="icon_close"></i></a>
                                     </td>
                                 </tr>
                                 <tr class="article-list-item" id="article-list-item-dummy1-3">
@@ -142,7 +142,7 @@
                                     <td class="article-list-row2">10</td>
                                     <td class="article-list-row3 table-actions">
                                         <a class="input-btn success tooltip action-article-send" href="#" title="Marcar como enviado"><i class="icon_box-checked"></i></a>
-                                        <a class="input-btn error tooltip action-article-delete" href="#" title="Eliminar del pedido" data-reveal-id="article-delete"><i class="icon_close"></i></a>
+                                        <a class="input-btn error tooltip action-article-delete" href="#" title="Eliminar del pedido" data-toggle="modal" data-target="#article-delete"><i class="icon_close"></i></a>
                                     </td>
                                 </tr>
                                 <tr class="article-list-item" id="article-list-item-dummy1-4">
@@ -150,7 +150,7 @@
                                     <td class="article-list-row2">10</td>
                                     <td class="article-list-row3 table-actions">
                                         <a class="input-btn success tooltip action-article-send" href="#" title="Marcar como enviado"><i class="icon_box-checked"></i></a>
-                                        <a class="input-btn error tooltip action-article-delete" href="#" title="Eliminar del pedido" data-reveal-id="article-delete"><i class="icon_close"></i></a>
+                                        <a class="input-btn error tooltip action-article-delete" href="#" title="Eliminar del pedido" data-toggle="modal" data-target="#article-delete"><i class="icon_close"></i></a>
                                     </td>
                                 </tr>
                                 <tr class="article-list-item" id="article-list-item-dummy1-5">
@@ -158,7 +158,7 @@
                                     <td class="article-list-row2">10</td>
                                     <td class="article-list-row3 table-actions">
                                         <a class="input-btn success tooltip action-article-send" href="#" title="Marcar como enviado"><i class="icon_box-checked"></i></a>
-                                        <a class="input-btn error tooltip action-article-delete" href="#" title="Eliminar del pedido" data-reveal-id="article-delete"><i class="icon_close"></i></a>
+                                        <a class="input-btn error tooltip action-article-delete" href="#" title="Eliminar del pedido" data-toggle="modal" data-target="#article-delete"><i class="icon_close"></i></a>
                                     </td>
                                 </tr>
                                 <tr class="article-list-item" id="article-list-item-dummy1-6">
@@ -166,18 +166,12 @@
                                     <td class="article-list-row2">10</td>
                                     <td class="article-list-row3 table-actions">
                                         <a class="input-btn success tooltip action-article-send" href="#" title="Marcar como enviado"><i class="icon_box-checked"></i></a>
-                                        <a class="input-btn error tooltip action-article-delete" href="#" title="Eliminar del pedido" data-reveal-id="article-delete"><i class="icon_close"></i></a>
+                                        <a class="input-btn error tooltip action-article-delete" href="#" title="Eliminar del pedido" data-toggle="modal" data-target="#article-delete"><i class="icon_close"></i></a>
                                     </td>
                                 </tr>
                             </tbody>
 
                         </table>
-                        <!--
-                            <div class="input-btn-group centered">
-                                <a href="order.html" class="input-btn">Administrar pedido</a>
-                                <a href="" class="input-btn error" data-reveal-id="order-delete">Remover</a>
-                            </div>
-                        -->
                     </div>
 
                 </div>
@@ -230,12 +224,15 @@
 
 
             <div class="input-btn-group centered margin-top">
-                <a href="" class="input-btn error" data-reveal-id="order-delete">Remover pedido</a>
+                <a href="#" class="input-btn error" data-toggle="modal" data-target="#order-delete">Remover pedido</a>
             </div>
 
         </div> <!-- /.main-container -->
-    </div> <!-- /.wrapper -->
 
+
+    </div> <!-- /.wrapper -->
+    
+    <!--
     <div id="order-delete" class="reveal-modal modal-warning">
         <h3 class="subtitle">¿Estás seguro?</h3>
         <p>Estás a punto de remover un pedido.<br>Esta acción no tiene vuelta atrás.</p>
@@ -247,7 +244,7 @@
         <a class="close-reveal-modal">&#215;</a>
     </div>
 
-    <div id="article-delete" class="reveal-modal modal-warning">
+    <div id="article-delete" class="reveal-modal modal-warning" data-reveal>
         <h3 class="subtitle">¿Estás seguro?</h3>
         <p>Estás a punto de remover un artículo de un pedido.<br>Esta acción no tiene vuelta atrás y solo debería realizarse si el artículo no podrá enviarse.</p>
         <div class="input-btn-group centered">
@@ -256,14 +253,49 @@
             
         </div>
         <a class="close-reveal-modal">&#215;</a>
+    </div> -->
+
+    <div class="modal fade" id="order-delete" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <a class="close" data-dismiss="modal">&times;</a>
+            <h3 class="subtitle">¿Estás seguro?</h4>
+          </div>
+          <div class="modal-body">
+            <p>Estás a punto de remover un pedido.<br>Esta acción no tiene vuelta atrás.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="input-btn error" data-dismiss="modal">Si, remover el pedido</button>
+            <button type="button" class="input-btn" data-dismiss="modal">Cancelar</button>
+          </div>
+        </div>
+      </div>
     </div>
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <div class="modal fade" id="article-delete" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <a class="close" data-dismiss="modal">&times;</a>
+            <h3 class="subtitle">¿Estás seguro?</h4>
+          </div>
+          <div class="modal-body">
+            <p>Estás a punto de remover un artículo de un pedido.<br>Esta acción no tiene vuelta atrás y solo debería realizarse si el artículo no podrá enviarse.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="input-btn error" data-dismiss="modal">Si, remover el artículo</button>
+            <button type="button" class="input-btn" data-dismiss="modal">Cancelar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 	<script src="js/scripts.js"></script>
 
     <script>
         /* DUMMY STUFF */
-
 
         $('.action-article-send').click(function() {
             $(this).parents('.article-list-item').fadeOut(400);

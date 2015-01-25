@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<!--[if IE 8]>    <html lang="es" class="ie8"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="es" class="no-ie"> <!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>Vete al Diablo - Panel Administador</title>
+
+	<link rel="stylesheet" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:500,400italic,100,300,700,300italic,400' rel='stylesheet' type='text/css'>
+    
+    <!--[if lt IE 9]>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<header>
+        <a class="nav-btn">
+            <div class="nav-btn-inner">
+                <span class="nav-btn-1"></span>
+                <span class="nav-btn-2"></span>
+                <span class="nav-btn-3"></span>
+            </div>
+        </a>
+		<div class="nav-logo">
+			<span class="img-centering"></span>
+			<img src="img/logo.png" alt="Crediadmin">
+		</div>
+		<div class="nav-user">
+			<a class="user-settings"><i class="icon_cog"></i></a>
+			<div class="user">
+				<p class="name">Cuenta administrador</p>
+				<p class="email">administrador@vetealdiablo.com.ar</p>
+			</div>
+
+			<ul id="user-settings-dropdown" class="user-settings-dropdown">
+                <!--<li><a href="#"><i class="icon_question_alt"></i>Ayuda</a></li>-->
+                <li><a href="vendedor.html"><i class="arrow_carrot-right_alt"></i>Ver ejemplo cuenta vendedor</a></li>
+            	<li><a href="index.html"><i class="icon_key"></i>Cerrar sesión</a></li>
+			</ul>
+		</div>
+	</header>
+
+    <div id="wrapper" class="wrapper">
+
+        <nav id="nav-side" class="nav-side scrollable">
+            <ul class="nav-side-items">
+                <li class="dropdown-container">
+                    <span class="dropdown-arrow arrow_carrot-down"></span>
+                    <a class="dropdown"><i class="icon_cart_alt"></i>Pedidos</a>
+                    <ul>
+                        <li><a href="admin.html">Pedidos activos</a></li>
+                        <li><a href="pedidos-entregados.html">Pedidos entregados</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-container">
+                    <span class="dropdown-arrow arrow_carrot-down"></span>
+                    <a class="dropdown"><i class="icon_grid-3x3"></i>Artículos</a>
+                    <ul>
+                        <li><a href="articulos-nuevo.html">Agregar nuevo</a></li>
+                        <li><a href="articulos-listado.html">Listado artículos</a></li>
+                    </ul>
+                </li>
+                <li><a href="estadisticas.html"><i class="icon_datareport"></i>Estadísticas</a></li>
+                <li><a href="usuarios.html"><i class="icon_group"></i>Autorizar usuarios</a></li>
+            </ul>
+            <ul class="nav-side-user">
+                <!-- <li><a href="#"><i class="icon_question_alt"></i>Ayuda</a></li> -->
+                <li><a href="index.html"><i class="icon_key"></i>Cerrar sesión</a></li>
+            </ul>
+        </nav>
+
+
+
+
+
+        <!-- MAIN CONTENT -->
+
+        <div class="main-container cf">
+            
+            <h2 class="main-title"><i class="icon_grid-3x3" style="top: 0px"></i>Artículo #4940</h2>
+
+            <div class="row cf">
+                <div class="col card-container span_12">
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3><i class="icon_info_alt"></i>Información básica</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="row form-row">
+                                <div class="col span_3">
+                                    <label class="input-label" for="input-1">Camisa Onice</label>
+                                    <input type="text" class="input-main" id="input-1" value="Camisa Onice">
+                                </div>
+                                <div class="col span_3">
+                                    <label class="input-label" for="input-2">Número de artículo</label>
+                                    <input type="text" class="input-main" id="input-2" value="4940">
+                                </div>
+                                <div class="col span_3">
+                                    <label class="input-label" for="input-3">Categoría</label>
+                                    <select name="" id="input-3" class="chosen input-main">
+                                        <option value="">Seleccione una...</option>
+                                        <option value="">Pantalones</option>
+                                        <option value="">Remeras</option>
+                                        <option value="" selected>Camisas</option>
+                                        <option value="">Accesorios</option>
+                                        <option value="">Buzos</option>
+                                        <option value="">Bolsos</option>
+                                    </select>
+                                </div>
+                                <div class="col span_3">
+                                    <label class="input-label" for="input-4">Stock</label>
+                                    <input type="text" class="input-main" id="input-4" value="130">
+                                </div>
+                            </div>
+                            <div class="row form-row">
+                                <div class="col span_3">
+                                    <label class="input-label" for="">Talles disponibles</label>
+                                    <label class="input-radio" for="talles-1">
+                                        <input type="checkbox" name="talles" value="" id="talles-1" checked>
+                                        S
+                                    </label>
+                                    <label class="input-radio" for="talles-2">
+                                        <input type="checkbox" name="talles" value="" id="talles-2" checked>
+                                        M
+                                    </label>
+                                    <label class="input-radio" for="talles-3">
+                                        <input type="checkbox" name="talles" value="" id="talles-3" checked>
+                                        L
+                                    </label>
+                                    <label class="input-radio" for="talles-4">
+                                        <input type="checkbox" name="talles" value="" id="talles-4">
+                                        XL
+                                    </label>
+                                </div>
+                                <div class="col span_3">
+                                    <label class="input-label" for="input-5">Colores disponibles</label>
+                                    <select name="" id="input-5" class="chosen input-main" multiple>
+                                        <option value="">Amarillo</option>
+                                        <option value="">Azul</option>
+                                        <option value="" selected>Blanco</option>
+                                        <option value="">Celeste</option>
+                                        <option value="">Gris</option>
+                                        <option value="">Marron</option>
+                                        <option value="">Naranja</option>
+                                        <option value="">Negro</option>
+                                        <option value="">Rojo</option>
+                                        <option value="">Rosa</option>
+                                        <option value="">Verde</option>
+                                        <option value="">Violeta</option>
+                                    </select>
+                                </div>
+                                <div class="col span_3">
+                                    <label class="input-label" for="input-6">Precio (franquicias)</label>
+                                    <input type="text" class="input-main" id="input-6" value="280">
+                                </div>
+                                <div class="col span_3">
+                                    <label class="input-label" for="input-7">Precio (vendedores)</label>
+                                    <input type="text" class="input-main" id="input-7" value="320">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3><i class="icon_image"></i>Imagen del artículo</h3>
+                        </div>
+                        <div class="card-content">
+                            <div id="article-dummy-imgload">
+                                <p class="info-tag gray" style="margin-bottom: 12px"><strong>Selecciona una imagen .jpg o arrastra un archivo a esta página.</strong></p>
+                                <p><input type="file" id="file-input"></p>
+
+                                <!--<p id="actions" style="display:none;">
+                                    <a type="button" id="edit" class="input-btn" href="#">Recortar imagen</a>
+                                    <a type="button" id="crop" class="input-btn success" href="#">Realizar recorte</a>
+                                </p>-->
+
+                                <div id="result" class="result">
+                                    <p></p>
+                                </div>
+                            </div>
+
+                            <img src="http://www.vetealdiablo.net/SS_014/wp-content/gallery/lookbook2014/4421_.jpg" alt="" id="article-dummy-img">
+
+                            <a class="input-btn label-margin" id="article-dummy-newimg">Cambiar imagen</a>
+
+
+                        </div>
+                    </div>
+                    
+
+                    <div class="input-btn-group centered">
+                        <a href="articulos-listado.html" class="input-btn">Actualizar artículo</a>
+                        <a href="#" class="input-btn error" data-toggle="modal" data-target="#article-delete">Eliminar</a>
+                    </div>
+                </div>
+
+            </div> <!-- /.row -->
+
+        </div> <!-- /.main-container -->
+    </div> <!-- /.wrapper -->
+
+    <div class="modal fade" id="article-delete" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <a class="close" data-dismiss="modal">&times;</a>
+            <h3 class="subtitle">¿Estás seguro?</h4>
+          </div>
+          <div class="modal-body">
+            <p>Estás a punto de remover un artículo.<br>Esta acción no tiene vuelta atrás y solo debería realizarse cuando un pedido quede discontinuado.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="input-btn error" data-dismiss="modal">Si, remover el pedido</button>
+            <button type="button" class="input-btn" data-dismiss="modal">Cancelar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/scripts.js"></script>
+
+    <script>
+        $('#article-dummy-newimg').click(function() {
+            $(this).hide();
+            $('#article-dummy-img').hide();
+            $('#article-dummy-imgload').fadeIn(500);
+        });
+        
+    </script>
+</body>
+</html>

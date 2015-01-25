@@ -52,7 +52,7 @@
                     <a class="dropdown"><i class="icon_cart_alt"></i>Pedidos</a>
                     <ul>
                         <li><a href="admin.html">Pedidos activos</a></li>
-                        <li><a href="pedidos-entregados.html" class="active">Pedidos entregados</a></li>
+                        <li><a href="pedidos-entregados.html">Pedidos entregados</a></li>
                     </ul>
                 </li>
                 <li class="dropdown-container">
@@ -63,7 +63,7 @@
                         <li><a href="articulos-listado.html">Listado artículos</a></li>
                     </ul>
                 </li>
-                <li><a href="estadisticas.html"><i class="icon_datareport"></i>Estadísticas</a></li>
+                <li><a href="estadisticas.html" class="active"><i class="icon_datareport"></i>Estadísticas</a></li>
                 <li><a href="usuarios.html"><i class="icon_group"></i>Autorizar usuarios</a></li>
             </ul>
             <ul class="nav-side-user">
@@ -80,71 +80,108 @@
 
         <div class="main-container cf">
             
-            <h2 class="main-title"><i class="icon_cart_alt"></i>Pedidos entregados</h2>
-
+            <h2 class="main-title"><i class="icon_datareport"></i>Estadísticas</h2>
+                
+            <h3 class="subtitle">Artículos mas vendidos</h3>
             <div class="row cf">
                 <div class="col card-container span_12">
                     <div class="table-container table-rounded table-striped">
                         <table class="table-default">
                             <thead>
-                                <th>Pedido</th>
-                                <th>Fecha</th>
-                                <th>Comprador</th>
-                                <th>Importe</th>
+                                <th>Artículo</th>
+                                <th>Cantidad de ventas</th>
+                                <th>Precio</th>
+                                <th>Ganancia bruta</th>
                             </thead>
                             <tbody class="article-list-items">
                                 <tr class="article-list-item">
-                                    <td><a href="administrar-pedido.html">Pedido #2039</a></td>
-                                    <td>23/01/15</td>
-                                    <td>Sucursal Belgrano</td>
-                                    <td>$7284,50</td>
+                                    <td><a href="administrar-articulo.html">Nombre del artículo</a></td>
+                                    <td>218</td>
+                                    <td>$330</td>
+                                    <td>$71.940</td>
                                 </tr>
                                 <tr class="article-list-item">
-                                    <td><a href="administrar-pedido.html">Pedido #2039</a></td>
-                                    <td>23/01/15</td>
-                                    <td>Sucursal Belgrano</td>
-                                    <td>$7284,50</td>
+                                    <td><a href="administrar-articulo.html">Nombre del artículo</a></td>
+                                    <td>190</td>
+                                    <td>$260</td>
+                                    <td>$49.400</td>
                                 </tr>
                                 <tr class="article-list-item">
-                                    <td><a href="administrar-pedido.html">Pedido #2039</a></td>
-                                    <td>23/01/15</td>
-                                    <td>Sucursal Belgrano</td>
-                                    <td>$7284,50</td>
+                                    <td><a href="administrar-articulo.html">Nombre del artículo</a></td>
+                                    <td>80</td>
+                                    <td>$450</td>
+                                    <td>$36.000</td>
                                 </tr>
                                 <tr class="article-list-item">
-                                    <td><a href="administrar-pedido.html">Pedido #2039</a></td>
-                                    <td>23/01/15</td>
-                                    <td>Sucursal Belgrano</td>
-                                    <td>$7284,50</td>
+                                    <td><a href="administrar-articulo.html">Nombre del artículo</a></td>
+                                    <td>218</td>
+                                    <td>$120</td>
+                                    <td>$26.160</td>
                                 </tr>
                                 <tr class="article-list-item">
-                                    <td><a href="administrar-pedido.html">Pedido #2039</a></td>
-                                    <td>23/01/15</td>
-                                    <td>Sucursal Belgrano</td>
-                                    <td>$7284,50</td>
-                                </tr>
-                                <tr class="article-list-item">
-                                    <td><a href="administrar-pedido.html">Pedido #2039</a></td>
-                                    <td>23/01/15</td>
-                                    <td>Sucursal Belgrano</td>
-                                    <td>$7284,50</td>
-                                </tr>
-                                <tr class="article-list-item">
-                                    <td><a href="administrar-pedido.html">Pedido #2039</a></td>
-                                    <td>23/01/15</td>
-                                    <td>Sucursal Belgrano</td>
-                                    <td>$7284,50</td>
-                                </tr>
-                                <tr class="article-list-item">
-                                    <td><a href="administrar-pedido.html">Pedido #2039</a></td>
-                                    <td>23/01/15</td>
-                                    <td>Sucursal Belgrano</td>
-                                    <td>$7284,50</td>
+                                    <td><a href="administrar-articulo.html">Nombre del artículo</a></td>
+                                    <td>98</td>
+                                    <td>$160</td>
+                                    <td>$15.680</td>
                                 </tr>
                             </tbody>
                         </table>
                         
                     </div>
+
+                    <a href="#" class="input-btn label-margin"><i class="icon_plus"></i> Ver todos</a>
+                </div>
+
+            </div> <!-- /.row -->
+
+
+            <h3 class="subtitle">Clientes</h3>
+            <div class="row cf">
+                <div class="col card-container span_12">
+                    <div class="table-container table-rounded table-striped">
+                        <table class="table-default">
+                            <thead>
+                                <th>Nombre cliente</th>
+                                <th>Sucursal</th>
+                                <th>Cantidad de pedidos</th>
+                                <th>Gasto total</th>
+                            </thead>
+                            <tbody class="article-list-items">
+                                <tr class="article-list-item">
+                                    <td>Juan Pérez</td>
+                                    <td>Unicenter Shopping</td>
+                                    <td>59</td>
+                                    <td>$596.340</td>
+                                </tr>
+                                <tr class="article-list-item">
+                                    <td>Miguel Ángel Pérez</td>
+                                    <td>Belgrano</td>
+                                    <td>48</td>
+                                    <td>$473.140</td>
+                                </tr>
+                                <tr class="article-list-item">
+                                    <td>Carlos Alberto Pérez</td>
+                                    <td>Abasto Shopping</td>
+                                    <td>42</td>
+                                    <td>$410.370</td>
+                                </tr>
+                                <tr class="article-list-item">
+                                    <td>José Luis Pérez</td>
+                                    <td>Palermo Soho</td>
+                                    <td>37</td>
+                                    <td>$356.140</td>
+                                </tr>
+                                <tr class="article-list-item">
+                                    <td>Luis Alberto Pérez</td>
+                                    <td>Flores</td>
+                                    <td>31</td>
+                                    <td>$295.870</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <a href="#" class="input-btn label-margin"><i class="icon_plus"></i> Ver todos</a>
                 </div>
 
             </div> <!-- /.row -->

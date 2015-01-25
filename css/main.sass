@@ -15,6 +15,9 @@ html
 	height: 100%
 	position: relative
 
+.no-header
+	height: auto
+
 body
 	min-height: 100%
 	font-family: 'Roboto', 'Helvetica Neue', Helvetica, sans-serif
@@ -302,7 +305,7 @@ header
 	box-shadow: 6px 0px 12px rgba(0,0,0,0.2)
 
 .wrapper
-	padding-top: 75px
+	padding-top: 76px
 
 .loading-overlay
 	position: fixed
@@ -363,6 +366,10 @@ header
 	font-size: 1.5em
 	font-weight: 300
 	margin-top: 25px
+
+	i
+		font-size: 0.9em
+		margin-right: 8px
 
 @media only screen and (max-width : 600px)
 	.main-title
@@ -690,6 +697,7 @@ h2 .info-tag, h3 .info-tag
 	margin-bottom: 10px
 	text-transform: uppercase
 	outline: 0
+	cursor: pointer
 	@include hover
 .input-btn:hover
 	background-color: darken($main,10)
@@ -769,6 +777,9 @@ h2 .info-tag, h3 .info-tag
 .table-rounded
 	border-radius: 4px
 	overflow: hidden
+
+.table-smalltext
+	font-size: 0.9em
 
 .article-list-row2
 	width: 18%
@@ -918,9 +929,77 @@ body.login
 		opacity: 1
 
 
+.registration-container
+	display: block
+	max-width: 767px
+	margin: 40px auto 0 auto
+	padding: 0 30px
 
+	h3
+		color: white
+		margin-top: 40px
+		margin-bottom: 20px
+	
+	label
+		color: white
 
+	img
+		display: block
+		margin: 0 auto 30px auto
+		width: 220px
+		height: auto
 
+	.registration-btn
+		.input-btn
+			width: 200px
+			display: block
+			margin: 20px auto
+			float: none
+			text-align: center
+			background-color: darken($main, 5)
+			padding: 0 22px
+			line-height: 44px
+			height: 44px
+			color: white
+
+		.input-btn:hover, .input-btn:focus
+			background-color: darken($main, 12)
+
+.registration-done-container
+	width: 290px
+	height: 250px
+	position: absolute
+	left: 50%
+	top: 50%
+	margin-top: -125px
+	margin-left: -145px
+	text-align: center
+	color: white
+
+	h3
+		margin: 12px 0 0 0 !important
+
+	i
+		font-size: 3em
+
+	p
+		font-size: 0.9em
+		margin: 14px 0 24px 0
+
+	.input-btn
+		width: 200px
+		display: block
+		margin: 20px auto
+		float: none
+		text-align: center
+		background-color: darken($main, 5)
+		padding: 0 22px
+		line-height: 44px
+		height: 44px
+		color: white
+
+	.input-btn:hover, .input-btn:focus
+		background-color: darken($main, 12)
 
 
 
@@ -978,8 +1057,34 @@ body.login
 		color: lighten($gray,25)
 		margin-top: 4px
 
+	.table-container
+		margin-top: 25px
 
+		.table-default
+			font-size: 0.8em !important
+		
+		@media only screen and (max-width : 760px)
+			
+			table
+				min-width: 350px
 
+.article-subtotal
+	text-align: center
+	margin-top: 25px
+
+	h3
+		margin: 0
+
+.order-total
+	.info-tag
+		width: 140px
+		margin: 15px auto 30px auto
+		display: block
+		text-align: center
+		font-size: 1em
+
+	td
+		padding: 12px 12px
 
 
 
@@ -999,3 +1104,11 @@ body.login
 	max-width: 400px
 	max-height: 400px
 	margin-top: 12px
+
+#article-dummy-img
+	width: 200px
+	height: auto
+	display: block
+
+#article-dummy-imgload
+	display: none

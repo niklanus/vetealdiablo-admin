@@ -7314,6 +7314,20 @@ body.login {
 .order-total td {
   padding: 12px 12px; }
 
+.stock-item {
+  background-color: #f1f1f1;
+  border: 1px solid #d8d7d7;
+  border-radius: 4px; }
+  .stock-item .row {
+    padding: 4px 10px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  @media only screen and (max-width: 760px) {
+    .stock-item {
+      margin-bottom: 14px; }
+      .stock-item .row {
+        padding: 4px 0px; } }
+
 /*  DUMMY STUFF */
 #article-list-item-dummy2-1, #article-list-item-dummy2-2, #article-list-item-dummy2-3, #article-list-item-dummy2-4, #article-list-item-dummy2-5, #article-list-item-dummy2-6 {
   display: none; }

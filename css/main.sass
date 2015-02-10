@@ -38,7 +38,8 @@ textarea
 
 header
 	width: 100%	
-	background: $main
+	//background: $main
+	background: darken($gray,3)
 	height: 76px
 	position: fixed
 	top: 0
@@ -154,7 +155,8 @@ header
 		.user-settings
 			display: inline-block
 			float: right
-			background: darken($main,5)
+			//background: darken($main,5)
+			background: $gray
 			width: 76px
 			height: 76px
 			color: white
@@ -169,7 +171,7 @@ header
 				left: 1px
 
 		.user-settings:hover
-			background: darken($main,10)
+			background: lighten($gray,10)
 
 .ie8
 	.nav-btn-inner
@@ -855,7 +857,21 @@ h2 .info-tag, h3 .info-tag
 
 
 body.login
-	background-color: $main
+	background-color: white
+
+.login-bg
+	//background-color: $main
+	padding: 12px
+	border-radius: 4px
+	background: #003c73
+	background: -moz-linear-gradient(-45deg, #003c73 5%, #5aa696 100%)
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(5%,#003c73), color-stop(100%,#5aa696))
+	background: -webkit-linear-gradient(-45deg, #003c73 5%,#5aa696 100%)
+	background: -o-linear-gradient(-45deg, #003c73 5%,#5aa696 100%)
+	background: -ms-linear-gradient(-45deg, #003c73 5%,#5aa696 100%)
+	background: linear-gradient(135deg, #003c73 5%,#5aa696 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003c73', endColorstr='#5aa696',GradientType=1 )
+	
 
 .login-container
 	width: 290px
@@ -891,14 +907,15 @@ body.login
 		z-index: 2*/
 
 	.input-btn
-		background-color: darken($main, 5)
+		background-color: black
+		background-color: rgba(0,0,0,0.26)
 		float: right
 		padding: 0 22px
 		height: 44px
 		line-height: 44px
 		color: white
 	.input-btn:hover, .input-btn:focus
-		background-color: darken($main, 12)
+		background-color: rgba(0,0,0,0.45)
 
 	.input-radio
 		display: inline-block
@@ -906,8 +923,8 @@ body.login
 		float: left
 		margin-top: 12px
 		border: 0
-		color: white
 		background-color: transparent
+		color: white
 	.input-radio:hover
 		background-color: transparent
 
@@ -918,12 +935,10 @@ body.login
 		font-size: 0.9em
 		text-align: center
 		margin-top: 20px
-		color: white
+		color: $gray
 		opacity: 0.75
 		i
 			margin-right: 7px
-		a
-			color: white
 	
 	.password:hover
 		opacity: 1
@@ -936,12 +951,8 @@ body.login
 	padding: 0 30px
 
 	h3
-		color: white
 		margin-top: 40px
 		margin-bottom: 20px
-	
-	label
-		color: white
 
 	img
 		display: block
@@ -974,7 +985,6 @@ body.login
 	margin-top: -125px
 	margin-left: -145px
 	text-align: center
-	color: white
 
 	h3
 		margin: 12px 0 0 0 !important

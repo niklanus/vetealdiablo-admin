@@ -190,6 +190,17 @@
 		"shouldRunBless": 1,
 		"useLibsass": 1
 		},
+	"\/css\/img\/cbp-sprite.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8487,
+		"inputAbbreviatedPath": "\/css\/img\/cbp-sprite.png",
+		"outputAbbreviatedPath": "\/css\/img\/cbp-sprite.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/css\/main.sass": {
 		"createSourceMap": 0,
 		"debugStyle": 0,

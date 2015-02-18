@@ -875,11 +875,11 @@ body.login
 
 .login-container
 	width: 290px
-	height: 360px
+	height: 380px
 	position: absolute
 	left: 50%
 	top: 50%
-	margin-top: -180px
+	margin-top: -190px
 	margin-left: -145px
 	text-align: center
 
@@ -942,6 +942,43 @@ body.login
 	
 	.password:hover
 		opacity: 1
+
+.login-error
+	width: 100%
+	display: block
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	z-index: 10
+
+	span
+		display: block
+		color: white
+		font-weight: 400
+		background-color: #f0414b
+		border-radius: 4px
+		padding: 15px
+		margin: 15px
+
+		i
+			margin-right: 10px
+			position: relative
+			top: 1px
+
+@media only screen and (max-width : 767px)
+	.login-error
+		position: relative
+
+	.login-container
+		position: relative
+		height: auto
+		margin: 30px auto 0 auto
+		left: auto
+		top: auto
+
+	body.login
+		min-height: 0px !important
 
 
 .registration-container

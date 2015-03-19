@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!--[if IE 8]>    <html lang="es" class="ie8"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="es" class="no-ie"> <!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>Vete al Diablo - Panel Administador</title>
+
+	<link rel="stylesheet" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:500,400italic,100,300,700,300italic,400' rel='stylesheet' type='text/css'>
+    
+    <!--[if lt IE 9]>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<header>
+        <a class="nav-btn">
+            <div class="nav-btn-inner">
+                <span class="nav-btn-1"></span>
+                <span class="nav-btn-2"></span>
+                <span class="nav-btn-3"></span>
+            </div>
+        </a>
+		<div class="nav-logo">
+			<span class="img-centering"></span>
+			<img src="img/logo.png" alt="Crediadmin">
+		</div>
+		<div class="nav-user">
+			<a class="user-settings"><i class="icon_cog"></i></a>
+			<div class="user">
+				<p class="name">Cuenta administrador</p>
+				<p class="email">administrador@vetealdiablo.com.ar</p>
+			</div>
+
+			<ul id="user-settings-dropdown" class="user-settings-dropdown">
+                <!--<li><a href="#"><i class="icon_question_alt"></i>Ayuda</a></li>-->
+                <li><a href="vendedor.html"><i class="arrow_carrot-right_alt"></i>Ver ejemplo cuenta vendedor</a></li>
+            	<li><a href="index.html"><i class="icon_key"></i>Cerrar sesión</a></li>
+			</ul>
+		</div>
+	</header>
+
+    <div id="wrapper" class="wrapper">
+
+        <nav id="nav-side" class="nav-side scrollable">
+            <ul class="nav-side-items">
+                <li class="dropdown-container">
+                    <span class="dropdown-arrow arrow_carrot-down"></span>
+                    <a class="dropdown"><i class="icon_cart_alt"></i>Pedidos</a>
+                    <ul>
+                        <li><a href="admin.html">Pedidos activos</a></li>
+                        <li><a href="pedidos-entregados.html">Pedidos entregados</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-container">
+                    <span class="dropdown-arrow arrow_carrot-down"></span>
+                    <a class="dropdown"><i class="icon_grid-3x3"></i>Artículos</a>
+                    <ul>
+                        <li><a href="articulos-nuevo.html">Agregar nuevo</a></li>
+                        <li><a href="articulos-listado.html">Listado artículos</a></li>
+                    </ul>
+                </li>
+                <li><a href="estadisticas.html"><i class="icon_datareport"></i>Estadísticas</a></li>
+                <li><a href="usuarios.html"><i class="icon_group"></i>Autorizar usuarios</a></li>
+            </ul>
+            <ul class="nav-side-user">
+                <!-- <li><a href="#"><i class="icon_question_alt"></i>Ayuda</a></li> -->
+                <li><a href="index.html"><i class="icon_key"></i>Cerrar sesión</a></li>
+            </ul>
+        </nav>
+
+
+
+
+
+        <!-- MAIN CONTENT -->
+
+        <div class="main-container cf">
+            
+            <h2 class="main-title"><i class="icon_grid-3x3" style="top: 0px"></i>Artículo #4940</h2>
+
+            <div class="row cf">
+                <div class="col card-container span_12">
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3><i class="icon_info_alt"></i>Información básica</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="row cf article-order-container">
+                                <div class="col span_4">
+                                    <div class="row form-row">
+                                        <label class="input-label">Nombre del artículo</label>
+                                        <p class="input-main-textonly">Camisa Onice</p>
+                                    </div>
+                                    <div class="row form-row">
+                                        <label class="input-label">Número de artículo</label>
+                                        <p class="input-main-textonly">I151002</p>
+                                    </div>
+                                    <div class="row form-row">
+                                        <label class="input-label">Categoría</label>
+                                        <p class="input-main-textonly">Camisas</p>
+                                    </div>
+                                    <div class="row form-row">
+                                        <label class="input-label">Temporada</label>
+                                        <p class="input-main-textonly">Invierno 2015</p>
+                                    </div>
+                                    <div class="row form-row">
+                                        <label class="input-label">Precio</label>
+                                        <p class="input-main-textonly">$ 279.99</p>
+                                    </div>
+                                </div>
+                                <div class="col span_8">
+                                    <div class="article-img-container">
+                                        <label class="input-label">Imagen del artículo</label>
+                                        <img src="http://placehold.it/3498x2945" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                                
+                        </div>
+                    </div>
+
+
+
+                    <div class="table-container table-rounded table-article-order">
+                        <table class="table-default">
+                            <thead>
+                                <th>Color \ Talle</th>
+                                <th>S</th>
+                                <th>M</th>
+                                <th>L</th>
+                                <th>XL</th>
+                            </thead>
+                            <tbody class="article-list-items">
+                                <tr class="article-list-item">
+                                    <td>Blanco</td>
+                                    <td><span class="not-available">No disponible</span></td>
+                                    <td><input type="text" class="input-main" placeholder="Cantidad"></td>
+                                    <td><input type="text" class="input-main" placeholder="Cantidad"></td>
+                                    <td><input type="text" class="input-main" placeholder="Cantidad"></td>
+                                </tr>
+                                <tr class="article-list-item">
+                                    <td>Gris</td>
+                                    <td><input type="text" class="input-main" placeholder="Cantidad"></td>
+                                    <td><input type="text" class="input-main" placeholder="Cantidad"></td>
+                                    <td><input type="text" class="input-main" placeholder="Cantidad"></td>
+                                    <td><input type="text" class="input-main" placeholder="Cantidad"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+
+                    <div class="input-btn-group centered">
+                        <a class="input-btn label-margin">Pedir artículo</a>
+                    </div>
+                </div>
+
+            </div> <!-- /.row -->
+
+        </div> <!-- /.main-container -->
+    </div> <!-- /.wrapper -->
+
+    <div class="modal fade" id="article-delete" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <a class="close" data-dismiss="modal">&times;</a>
+            <h3 class="subtitle">¿Estás seguro?</h4>
+          </div>
+          <div class="modal-body">
+            <p>Estás a punto de remover un artículo.<br>Esta acción no tiene vuelta atrás y solo debería realizarse cuando un pedido quede discontinuado.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="input-btn error" data-dismiss="modal">Si, remover el pedido</button>
+            <button type="button" class="input-btn" data-dismiss="modal">Cancelar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/scripts.js"></script>
+
+    <script>
+        $('#article-dummy-newimg').click(function() {
+            $(this).hide();
+            $('#article-dummy-img').hide();
+            $('#article-dummy-imgload').fadeIn(500);
+        });
+        
+    </script>
+</body>
+</html>

@@ -642,6 +642,16 @@ h2 .info-tag, h3 .info-tag
 .input-main:focus
 	border-color: $main
 
+.input-main-textonly
+	display: inline-block
+	padding: 5px 12px
+	font-weight: 400
+	@include box-sizing
+	border: 1px solid #cdc9c9
+	outline: 0
+	background-color: #f0f0f0
+
+
 .input-label
 	display: block
 	text-transform: uppercase
@@ -764,6 +774,12 @@ h2 .info-tag, h3 .info-tag
 		border-bottom: 1px solid #ECECEC
 		padding: 9px 12px
 
+		.not-available
+			color: gray
+			font-size: 0.9em
+			font-weight: 700
+			text-transform: uppercase
+
 	a
 		color: $blue
 
@@ -782,6 +798,10 @@ h2 .info-tag, h3 .info-tag
 
 .table-smalltext
 	font-size: 0.9em
+
+.table-article-order
+	thead th:first-child, tbody tr td:first-child
+		min-width: 90px
 
 .article-list-row2
 	width: 18%
@@ -1147,6 +1167,27 @@ body.login
 
 		.row
 			padding: 4px 0px
+
+.article-order-container
+	display: block !important
+	width: auto !important
+	margin: 0 auto
+	max-width: 800px
+
+.article-img-container
+	text-align: center
+	float: right
+	width: 100%
+	max-width: 400px
+
+	img
+		width: 100%
+		height: auto
+
+	@media only screen and (max-width : 760px)
+		margin-top: 2px
+		max-width: none
+		text-align: left
 
 
 

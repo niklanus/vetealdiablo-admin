@@ -164,6 +164,14 @@ $( document ).ready(function() {
     	days: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sabado']
     });
 
+    $('.datepicker-past').Zebra_DatePicker({
+    	show_icon: false,
+    	show_select_today: false,
+    	direction: -1,
+    	months: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+    	days: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sabado']
+    });
+
     $('.tooltip').frosty();
 });
 

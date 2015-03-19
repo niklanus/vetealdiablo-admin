@@ -159,7 +159,9 @@ $( document ).ready(function() {
 
     $('.datepicker').Zebra_DatePicker({
     	show_icon: false,
-    	show_select_today: false
+    	show_select_today: false,
+    	months: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+    	days: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sabado']
     });
 
     $('.tooltip').frosty();

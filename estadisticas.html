@@ -82,109 +82,150 @@
             
             <h2 class="main-title"><i class="icon_datareport"></i>Estadísticas</h2>
                 
-            <h3 class="subtitle">Artículos mas vendidos</h3>
-            <div class="row cf">
-                <div class="col card-container span_12">
-                    <div class="table-container table-rounded table-striped">
-                        <table class="table-default">
-                            <thead>
-                                <th>Artículo</th>
-                                <th>Cantidad de ventas</th>
-                                <th>Precio</th>
-                                <th>Ganancia bruta</th>
-                            </thead>
-                            <tbody class="article-list-items">
-                                <tr class="article-list-item">
-                                    <td><a href="administrar-articulo.html">Nombre del artículo</a></td>
-                                    <td>218</td>
-                                    <td>$330</td>
-                                    <td>$71.940</td>
-                                </tr>
-                                <tr class="article-list-item">
-                                    <td><a href="administrar-articulo.html">Nombre del artículo</a></td>
-                                    <td>190</td>
-                                    <td>$260</td>
-                                    <td>$49.400</td>
-                                </tr>
-                                <tr class="article-list-item">
-                                    <td><a href="administrar-articulo.html">Nombre del artículo</a></td>
-                                    <td>80</td>
-                                    <td>$450</td>
-                                    <td>$36.000</td>
-                                </tr>
-                                <tr class="article-list-item">
-                                    <td><a href="administrar-articulo.html">Nombre del artículo</a></td>
-                                    <td>218</td>
-                                    <td>$120</td>
-                                    <td>$26.160</td>
-                                </tr>
-                                <tr class="article-list-item">
-                                    <td><a href="administrar-articulo.html">Nombre del artículo</a></td>
-                                    <td>98</td>
-                                    <td>$160</td>
-                                    <td>$15.680</td>
-                                </tr>
-                            </tbody>
-                        </table>
+            <div class="statistics-search">
+                <div class="card no-header">
+                    <div class="card-content">
+
+
+                        <h3 class="subtitle"><i class="icon_search"></i> Buscar por</h3>
+                        <div class="row">
+                            <div class="col span_3">
+                                <label class="input-label" for="input-1">Artículo</label>
+                                <select name="" id="input-1" class="chosen input-main">
+                                    <option value="" selected disabled>Seleccione uno...</option>
+                                    <option value="">Todos los artículos</option>
+                                    <option value="">Artículo 1</option>
+                                    <option value="">Artículo 2</option>
+                                    <option value="">Artículo 3</option>
+                                    <option value="">Artículo 4</option>
+                                    <option value="">Artículo 5</option>
+                                    <option value="">Artículo 6</option>
+                                </select>
+                            </div>
+                            <div class="col span_3">
+                                <label class="input-label" for="input-2">Cliente</label>
+                                <select name="" id="input-2" class="chosen input-main">
+                                    <option value="" selected disabled>Seleccione uno...</option>
+                                    <option value="">Cliente 1</option>
+                                    <option value="">Cliente 2</option>
+                                    <option value="">Cliente 3</option>
+                                    <option value="">Cliente 4</option>
+                                    <option value="">Cliente 5</option>
+                                    <option value="">Cliente 6</option>
+                                </select>
+                            </div>
+                            <div class="col span_3">
+                                <label class="input-label" for="input-3">Categoría</label>
+                                <select name="" id="input-3" class="chosen input-main">
+                                    <option value="" selected disabled>Seleccione una...</option>
+                                    <option value="">Pantalones</option>
+                                    <option value="">Remeras</option>
+                                    <option value="">Camisas</option>
+                                    <option value="">Accesorios</option>
+                                    <option value="">Buzos</option>
+                                    <option value="">Bolsos</option>
+                                </select>
+                            </div>
+                            <div class="col span_3">
+                                <label class="input-label" for="input-4">Tipo de usuario</label>
+                                <select name="" id="input-4" class="chosen input-main">
+                                    <option value="" selected disabled>Seleccione uno...</option>
+                                    <option value="">Locales franquiciados</option>
+                                    <option value="">Vendedor</option>
+                                </select>
+                            </div>
+                        </div>
                         
+                        <h3 class="subtitle spacer"><i class="icon_adjust-vert"></i> Filtrar por</h3>
+                        <div class="row">
+                            <div class="col span_3">
+                                <label class="input-label" for="input-1">Temporada</label>
+                                <select name="" id="input-1" class="chosen input-main">
+                                    <option value="" selected disabled>Seleccione una...</option>
+                                    <option value="">Verano 2015</option>
+                                    <option value="">Invierno 2015</option>
+                                    <option value="">Verano 2014</option>
+                                    <option value="">Invierno 2014</option>
+                                </select>
+                            </div>
+                            <div class="col span_3">
+                                <label class="input-label" for="input-2">Fecha (desde)</label>
+                                <input type="text" class="input-main">
+                            </div>
+                            <div class="col span_3">
+                                <label class="input-label" for="input-2">Fecha (hasta)</label>
+                                <input type="text" class="input-main">
+                            </div>
+                        </div>
+
+                        <a href="#" class="input-btn label-margin">Buscar</a>
+
+
                     </div>
-
-                    <a href="#" class="input-btn label-margin"><i class="icon_plus"></i> Ver todos</a>
                 </div>
+            
+            </div>
 
-            </div> <!-- /.row -->
+            <div class="statistics-results">
+                <h3 class="subtitle">Resultados de la búsqueda</h3>
 
-
-            <h3 class="subtitle">Clientes</h3>
-            <div class="row cf">
-                <div class="col card-container span_12">
-                    <div class="table-container table-rounded table-striped">
-                        <table class="table-default">
-                            <thead>
-                                <th>Nombre cliente</th>
-                                <th>Sucursal</th>
-                                <th>Cantidad de pedidos</th>
-                                <th>Gasto total</th>
-                            </thead>
-                            <tbody class="article-list-items">
-                                <tr class="article-list-item">
-                                    <td>Juan Pérez</td>
-                                    <td>Unicenter Shopping</td>
-                                    <td>59</td>
-                                    <td>$596.340</td>
-                                </tr>
-                                <tr class="article-list-item">
-                                    <td>Miguel Ángel Pérez</td>
-                                    <td>Belgrano</td>
-                                    <td>48</td>
-                                    <td>$473.140</td>
-                                </tr>
-                                <tr class="article-list-item">
-                                    <td>Carlos Alberto Pérez</td>
-                                    <td>Abasto Shopping</td>
-                                    <td>42</td>
-                                    <td>$410.370</td>
-                                </tr>
-                                <tr class="article-list-item">
-                                    <td>José Luis Pérez</td>
-                                    <td>Palermo Soho</td>
-                                    <td>37</td>
-                                    <td>$356.140</td>
-                                </tr>
-                                <tr class="article-list-item">
-                                    <td>Luis Alberto Pérez</td>
-                                    <td>Flores</td>
-                                    <td>31</td>
-                                    <td>$295.870</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <a href="#" class="input-btn label-margin"><i class="icon_plus"></i> Ver todos</a>
+                <div class="table-container table-rounded table-striped">
+                    <table class="table-default">
+                        <thead>
+                            <th>Artículo</th>
+                            <th>Cantidad en pedidos</th>
+                            <th>Cantidad entregada</th>
+                            <th>% entregado</th>
+                            <th>Precio total</th>
+                        </thead>
+                        <tbody class="article-list-items">
+                            <tr class="article-list-item">
+                                <td><a href="administrar-articulo.html">Nombre del artículo</a></td>
+                                <td>140</td>
+                                <td>70</td>
+                                <td>50%</td>
+                                <td>$152,890.49</td>
+                            </tr>
+                            <tr class="article-list-item">
+                                <td><a href="administrar-articulo.html">Nombre del artículo</a></td>
+                                <td>140</td>
+                                <td>70</td>
+                                <td>50%</td>
+                                <td>$152,890.49</td>
+                            </tr>
+                            <tr class="article-list-item">
+                                <td><a href="administrar-articulo.html">Nombre del artículo</a></td>
+                                <td>140</td>
+                                <td>70</td>
+                                <td>50%</td>
+                                <td>$152,890.49</td>
+                            </tr>
+                            <tr class="article-list-item">
+                                <td><a href="administrar-articulo.html">Nombre del artículo</a></td>
+                                <td>140</td>
+                                <td>70</td>
+                                <td>50%</td>
+                                <td>$152,890.49</td>
+                            </tr>
+                            <tr class="article-list-item">
+                                <td><a href="administrar-articulo.html">Nombre del artículo</a></td>
+                                <td>140</td>
+                                <td>70</td>
+                                <td>50%</td>
+                                <td>$152,890.49</td>
+                            </tr>
+                        </tbody>
+                        <tfoot class="statistics-total">
+                            <td><strong>Total</strong></td>
+                            <td>700</td>
+                            <td>350</td>
+                            <td>50%</td>
+                            <td>$764,452.45</td>
+                        </tfoot>
+                    </table>
                 </div>
-
-            </div> <!-- /.row -->
+                <!-- <p><strong>Total de artículos vendidos:</strong> 591</p> -->
+            </div>
 
         </div> <!-- /.main-container -->
     </div> <!-- /.wrapper -->

@@ -7367,6 +7367,19 @@ body.login {
       .stock-item .row {
         padding: 4px 0px; } }
 
+.statistics-search .subtitle {
+  margin: 0 0 20px 0; }
+.statistics-search .subtitle.spacer {
+  margin: 30px 0 20px 0; }
+.statistics-search .input-btn {
+  margin-bottom: 0; }
+
+.statistics-results .subtitle {
+  margin: 50px 0 20px 0; }
+.statistics-results table .statistics-total td {
+  background-color: #373739;
+  color: white; }
+
 /*  DUMMY STUFF */
 #article-list-item-dummy2-1, #article-list-item-dummy2-2, #article-list-item-dummy2-3, #article-list-item-dummy2-4, #article-list-item-dummy2-5, #article-list-item-dummy2-6 {
   display: none; }

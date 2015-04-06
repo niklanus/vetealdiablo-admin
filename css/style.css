@@ -171,6 +171,7 @@ figure {
  * Address differences between Firefox and other browsers.
  */
 hr {
+  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0; }
 
@@ -277,7 +278,8 @@ input {
  */
 input[type="checkbox"],
 input[type="radio"] {
-  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */ }
@@ -299,6 +301,7 @@ input[type="number"]::-webkit-outer-spin-button {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
+  -moz-box-sizing: content-box;
   /* 2 */
   box-sizing: content-box; }
 
@@ -1518,6 +1521,7 @@ you can use the generic selector below, but it's slower:
 .col {
   border: 0px solid transparent;
   float: left;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   background-clip: padding-box !important; }
 
@@ -1731,6 +1735,7 @@ you can use the generic selector below, but it's slower:
       user-select: none; }
 
 .chosen-container * {
+  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 .chosen-container .chosen-drop {
@@ -2189,6 +2194,7 @@ body .fc {
 --------------------------------------------------------------------------------------------------*/
 .fc button {
   /* force height to include the border and padding */
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   /* dimensions */
   margin: 0;
@@ -2638,6 +2644,7 @@ a.fc-more:hover {
 .fc-view-container *,
 .fc-view-container *:before,
 .fc-view-container *:after {
+  -moz-box-sizing: content-box;
   box-sizing: content-box; }
 
 .fc-view,
@@ -2945,6 +2952,7 @@ be a descendant of the grid when it is being dragged.
 .Zebra_DatePicker *,
 .Zebra_DatePicker *:after,
 .Zebra_DatePicker *:before {
+  -moz-box-sizing: content-box !important;
   box-sizing: content-box !important; }
 
 .Zebra_DatePicker {
@@ -5070,6 +5078,7 @@ be a descendant of the grid when it is being dragged.
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"; }
 
 .cbp-popup-wrap {
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   height: 100%;
   text-align: center;
@@ -6705,6 +6714,7 @@ h2 .info-tag, h3 .info-tag {
 
 .card {
   margin-bottom: 20px;
+  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 .card-header {
@@ -6712,6 +6722,7 @@ h2 .info-tag, h3 .info-tag {
   background: #0e76bc;
   border-radius: 4px 4px 0px 0px;
   position: relative;
+  -moz-box-sizing: border-box;
   box-sizing: border-box; }
   .card-header h3 {
     margin: 0;
@@ -6787,6 +6798,7 @@ h2 .info-tag, h3 .info-tag {
   border-top: 0px;
   border-radius: 0px 0px 4px 4px;
   padding: 20px;
+  -moz-box-sizing: border-box;
   box-sizing: border-box; }
   @media only screen and (max-width: 500px) {
     .card-content {
@@ -6899,6 +6911,7 @@ h2 .info-tag, h3 .info-tag {
   width: 100%;
   padding: 5px 8px;
   font-weight: 400;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   border: 1px solid #cdc9c9;
   outline: 0; }
@@ -6910,6 +6923,7 @@ h2 .info-tag, h3 .info-tag {
   display: inline-block;
   padding: 5px 12px;
   font-weight: 400;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   border: 1px solid #cdc9c9;
   outline: 0;
@@ -7054,7 +7068,8 @@ h2 .info-tag, h3 .info-tag {
 
 .table-rounded {
   border-radius: 4px;
-  overflow: hidden; }
+  overflow: hidden;
+  overflow-x: auto; }
 
 .table-smalltext {
   font-size: 0.9em; }
@@ -7069,6 +7084,22 @@ h2 .info-tag, h3 .info-tag {
 .article-list-row3 {
   width: 18%;
   min-width: 90px; }
+
+.article-mgmt-row1 {
+  min-width: 150px;
+  font-size: 0.9em !important; }
+
+.article-mgmt-row2 {
+  font-size: 0.9em !important; }
+
+.article-mgmt-row3, .article-mgmt-row4 {
+  max-width: 70px; }
+  .article-mgmt-row3 input, .article-mgmt-row4 input {
+    width: 100%; }
+
+.article-mgmt-row4 input {
+  pointer-events: none;
+  border: 0px; }
 
 .table-actions {
   min-width: 80px; }
@@ -7363,6 +7394,7 @@ body.login {
   border-radius: 4px; }
   .stock-item .row {
     padding: 4px 10px;
+    -moz-box-sizing: border-box;
     box-sizing: border-box; }
   @media only screen and (max-width: 760px) {
     .stock-item {
@@ -7370,20 +7402,6 @@ body.login {
       .stock-item .row {
         padding: 4px 0px; } }
 
-<<<<<<< HEAD
-.statistics-search .subtitle {
-  margin: 0 0 20px 0; }
-.statistics-search .subtitle.spacer {
-  margin: 30px 0 20px 0; }
-.statistics-search .input-btn {
-  margin-bottom: 0; }
-
-.statistics-results .subtitle {
-  margin: 50px 0 20px 0; }
-.statistics-results table .statistics-total td {
-  background-color: #373739;
-  color: white; }
-=======
 .article-order-container {
   display: block !important;
   width: auto !important;
@@ -7403,7 +7421,19 @@ body.login {
       margin-top: 2px;
       max-width: none;
       text-align: left; } }
->>>>>>> origin/master
+
+.statistics-search .subtitle {
+  margin: 0 0 20px 0; }
+.statistics-search .subtitle.spacer {
+  margin: 30px 0 20px 0; }
+.statistics-search .input-btn {
+  margin-bottom: 0; }
+
+.statistics-results .subtitle {
+  margin: 50px 0 20px 0; }
+.statistics-results table .statistics-total td {
+  background-color: #373739;
+  color: white; }
 
 /*  DUMMY STUFF */
 #article-list-item-dummy2-1, #article-list-item-dummy2-2, #article-list-item-dummy2-3, #article-list-item-dummy2-4, #article-list-item-dummy2-5, #article-list-item-dummy2-6 {

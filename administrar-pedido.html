@@ -109,64 +109,28 @@
             </div>
 
             <div class="row cf">
-                <div class="col card-container span_6">
+                <div class="col card-container span_7">
 
                     <h3 class="subtitle">Artículos pendientes de envío</h3>
                     
                     <div class="table-rounded">
                         <table class="table-default">
                             <thead>
-                                <th class="article-list-row1">Artículo</th>
-                                <th class="article-list-row2">Cantidad</th>
-                                <th class="article-list-row3">Acciones</th>
+                                <th>Artículo</th>
+                                <th>Código</th>
+                                <th>Enviados</th>
+                                <th>Cantidad Total</th>
+                                <th>Acciones</th>
                             </thead>
                             <tbody class="article-list-items">
-                                <tr class="article-list-item" id="article-list-item-dummy1-1">
-                                    <td class="article-list-row1"><a href="administrar-articulo.html">Nombre del artículo</a></td>
-                                    <td class="article-list-row2">10</td>
-                                    <td class="article-list-row3 table-actions">
+                                <tr class="article-list-item">
+                                    <td class="article-mgmt-row1"><a href="">REMERA HEFFEI SUBLIMADA BICHITOS (AZUL - S)</a></td>
+                                    <td class="article-mgmt-row2">I151001</td>
+                                    <td class="article-mgmt-row3"><input type="number" value="0"></td>
+                                    <td class="article-mgmt-row4"><input type="number" value="4"></td>
+                                    <td class="article-mgmt-row5 table-actions">
                                         <a class="input-btn success tooltip action-article-send" href="#" title="Marcar como enviado"><i class="icon_box-checked"></i></a>
-                                        <a class="input-btn error tooltip action-article-delete" href="#" title="Eliminar del pedido" data-toggle="modal" data-target="#article-delete"><i class="icon_close"></i></a>
-                                    </td>
-                                </tr>
-                                <tr class="article-list-item" id="article-list-item-dummy1-2">
-                                    <td class="article-list-row1"><a href="administrar-articulo.html">Nombre del artículo</a></td>
-                                    <td class="article-list-row2">10</td>
-                                    <td class="article-list-row3 table-actions">
-                                        <a class="input-btn success tooltip action-article-send" href="#" title="Marcar como enviado"><i class="icon_box-checked"></i></a>
-                                        <a class="input-btn error tooltip action-article-delete" href="#" title="Eliminar del pedido" data-toggle="modal" data-target="#article-delete"><i class="icon_close"></i></a>
-                                    </td>
-                                </tr>
-                                <tr class="article-list-item" id="article-list-item-dummy1-3">
-                                    <td class="article-list-row1"><a href="administrar-articulo.html">Nombre del artículo</a></td>
-                                    <td class="article-list-row2">10</td>
-                                    <td class="article-list-row3 table-actions">
-                                        <a class="input-btn success tooltip action-article-send" href="#" title="Marcar como enviado"><i class="icon_box-checked"></i></a>
-                                        <a class="input-btn error tooltip action-article-delete" href="#" title="Eliminar del pedido" data-toggle="modal" data-target="#article-delete"><i class="icon_close"></i></a>
-                                    </td>
-                                </tr>
-                                <tr class="article-list-item" id="article-list-item-dummy1-4">
-                                    <td class="article-list-row1"><a href="administrar-articulo.html">Nombre del artículo</a></td>
-                                    <td class="article-list-row2">10</td>
-                                    <td class="article-list-row3 table-actions">
-                                        <a class="input-btn success tooltip action-article-send" href="#" title="Marcar como enviado"><i class="icon_box-checked"></i></a>
-                                        <a class="input-btn error tooltip action-article-delete" href="#" title="Eliminar del pedido" data-toggle="modal" data-target="#article-delete"><i class="icon_close"></i></a>
-                                    </td>
-                                </tr>
-                                <tr class="article-list-item" id="article-list-item-dummy1-5">
-                                    <td class="article-list-row1"><a href="administrar-articulo.html">Nombre del artículo</a></td>
-                                    <td class="article-list-row2">10</td>
-                                    <td class="article-list-row3 table-actions">
-                                        <a class="input-btn success tooltip action-article-send" href="#" title="Marcar como enviado"><i class="icon_box-checked"></i></a>
-                                        <a class="input-btn error tooltip action-article-delete" href="#" title="Eliminar del pedido" data-toggle="modal" data-target="#article-delete"><i class="icon_close"></i></a>
-                                    </td>
-                                </tr>
-                                <tr class="article-list-item" id="article-list-item-dummy1-6">
-                                    <td class="article-list-row1"><a href="administrar-articulo.html">Nombre del artículo</a></td>
-                                    <td class="article-list-row2">10</td>
-                                    <td class="article-list-row3 table-actions">
-                                        <a class="input-btn success tooltip action-article-send" href="#" title="Marcar como enviado"><i class="icon_box-checked"></i></a>
-                                        <a class="input-btn error tooltip action-article-delete" href="#" title="Eliminar del pedido" data-toggle="modal" data-target="#article-delete"><i class="icon_close"></i></a>
+                                        <a class="input-btn error tooltip action-article-delete" href="#" data-toggle="modal" data-target="#article-delete" title="Eliminar del pedido"><i class="icon_close"></i></a>
                                     </td>
                                 </tr>
                             </tbody>
@@ -176,42 +140,22 @@
 
                 </div>
 
-                <div class="col card-container span_6">
+                <div class="col card-container span_5">
 
                     <h3 class="subtitle">Artículos enviados</h3>
                     
                     <div class="table-rounded">
                         <table class="table-default">
                             <thead>
-                                <th class="article-list-row1">Artículo</th>
-                                <th class="article-list-row2">Cantidad</th>
+                                <th>Artículo</th>
+                                <th>Código</th>
+                                <th>Cantidad</th>
                             </thead>
                             <tbody class="article-list-items">
-                                <tr class="article-list-item" id="article-list-item-dummy2-1">
-                                    <td class="article-list-row1"><a href="administrar-articulo.html">Nombre del artículo</a></td>
-                                    <td class="article-list-row2">10</td>
-                                    </td>
-                                </tr>
-                                <tr class="article-list-item" id="article-list-item-dummy2-2">
-                                    <td class="article-list-row1"><a href="administrar-articulo.html">Nombre del artículo</a></td>
-                                    <td class="article-list-row2">10</td>
-                                    </td>
-                                </tr>
-                                <tr class="article-list-item" id="article-list-item-dummy2-3">
-                                    <td class="article-list-row1"><a href="administrar-articulo.html">Nombre del artículo</a></td>
-                                    <td class="article-list-row2">10</td>
-                                </tr>
-                                <tr class="article-list-item" id="article-list-item-dummy2-4">
-                                    <td class="article-list-row1"><a href="administrar-articulo.html">Nombre del artículo</a></td>
-                                    <td class="article-list-row2">10</td>
-                                </tr>
-                                <tr class="article-list-item" id="article-list-item-dummy2-5">
-                                    <td class="article-list-row1"><a href="administrar-articulo.html">Nombre del artículo</a></td>
-                                    <td class="article-list-row2">10</td>
-                                </tr>
-                                <tr class="article-list-item" id="article-list-item-dummy2-6">
-                                    <td class="article-list-row1"><a href="administrar-articulo.html">Nombre del artículo</a></td>
-                                    <td class="article-list-row2">10</td>
+                                 <tr class="article-list-item">
+                                    <td class="article-mgmt-row1"><a href="">REMERA HEFFEI SUBLIMADA BICHITOS (AZUL - S)</a></td>
+                                    <td class="article-mgmt-row2">I151001</td>
+                                    <td class="article-mgmt-row3">0</td>
                                 </tr>
                             </tbody>
 

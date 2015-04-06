@@ -6546,7 +6546,8 @@ header {
   display: inline-block;
   position: absolute;
   background-color: #373739;
-  color: white; }
+  color: white;
+  visibility: hidden; }
   .nav-side ul {
     list-style: none;
     padding: 0;

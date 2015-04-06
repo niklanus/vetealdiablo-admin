@@ -187,6 +187,7 @@ $(window).on("load resize scroll",function(e){
 	$('#nav-side').css('top', scrollPos);
 	$('#wrapper').css('min-height', viewportHeight-76);
 	$('.scotch-panel-wrapper').css('min-height', viewportHeight-76);
+	$('.nav-side').css('visibility', 'visible');
 
 	if($(window).width() <= 680){
 		$('.nav-side-items').height(viewportHeight - 124)

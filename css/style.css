@@ -7098,10 +7098,6 @@ h2 .info-tag, h3 .info-tag {
   .article-mgmt-row3 input, .article-mgmt-row4 input {
     width: 100%; }
 
-.article-mgmt-row4 input {
-  pointer-events: none;
-  border: 0px; }
-
 .table-actions {
   min-width: 80px; }
   .table-actions .input-btn {
